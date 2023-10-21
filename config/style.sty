@@ -1,0 +1,36 @@
+% Arquivo de configuração e estilização do documento.
+
+% Pacotes necessários
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{array}
+
+%% Criar formatação para o cabeçalho
+\renewcommand*{\maketitle}{
+    \begin{center}
+        {\large \MakeUppercase{Universidade Federal do Rio Grande do Norte} \par}
+        {\large \MakeUppercase{Instituto Metrópole Digital}\par}
+        {\large Soluções de Exercícios de Matemática Elementar \unskip\strut\par}
+        \vspace*{0.40cm}
+        
+        Nome: \underline{\makebox[350pt][l]{\@aluno}}
+        \vspace*{0.40cm}
+        \large \textbf{Capítulo \@capitulo - Exercício \@exercicio}
+    \end{center}
+}
+
+%% Comandos 
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\U}{\mathbb U}
+\newcommand*{\aluno}[1]{\gdef\@aluno{#1}}
+\newcommand*{\capitulo}[1]{\gdef\@capitulo{#1}}
+\newcommand*{\exercicio}[1]{\gdef\@exercicio{#1}}
+
+%% Evitar quebra de palavras
+\sloppy
