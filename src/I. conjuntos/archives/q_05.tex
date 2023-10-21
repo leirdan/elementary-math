@@ -1,0 +1,51 @@
+\enquote{Dê exemplos de conjuntos $A, B, C$, justificando com os cálculos, que satisfaçam:}
+    \begin{enumerate}
+        \item \enquote{$A \cup (B \cap C) \ne (A \cup B) \cap C$. Qual o conjunto que será sempre igual a $A \cup (B \cap C)$?} \\
+        Sejam $A = \{ 2, 4, 6 \}, B = \{3, 6, 9 \}, C = \{4, 9, 14\}$. Assim, temos: 
+        \begin{align*}
+            A \cup (B \cap C) &\ne (A \cup B) \cap C \\ \implies
+            \{ 2, 4, 6 \} \cup (\{3, 6, 9 \} \cap \{4, 9, 14\}) &\ne (\{ 2, 4, 6 \} \cup \{3, 6, 9 \}) \cap \{4, 9, 14\} \\
+            \implies
+            \{2, 4, 6\} \cup \{9\} &\ne \{2, 3, 4, 6, 9\} \cap \{4, 9, 14\} \\
+            \implies
+            \{2, 4, 6, 9\} &\ne \{4, 9\}
+        \end{align*}
+        De acordo com a propriedade distributiva, podemos afirmar que $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$. Vejamos:
+        \begin{align*}
+            (A \cup B) &\cap (A \cup C) \\ =
+            (\{ 2, 4, 6 \} \cup \{3, 6, 9 \}) &\cap (\{ 2, 4, 6 \} \cup \{4, 9, 14\}) \\ =
+            \{ 2, 3, 4, 6, 9\} &\cap \{2, 4, 6, 9, 14 \} \\ = \{ 2, 4, 6, 9\}
+        \end{align*}
+        Portanto, concluímos que os conjuntos são iguais.
+        \item \enquote{$A \subseteq B$, mas $A^C \nsubseteq B^C$. Qual inclusão é sempre válida envolvendo $A^C$ e $B^C$?} \\
+        Sejam $A = \{4, 6\}, B = \{2, 4, 6, 8 \}, C = \{5\}, \U = A \cup B \cup C$. Logo, temos que:
+        \begin{displaymath}
+            A \subseteq B = \{4, 6\} \subseteq \{2, 4, 6, 8\}
+        \end{displaymath}
+        é verdadeiro, assim como
+        \begin{displaymath}
+            A^C \nsubseteq B^C = \{2, 5, 8\} \nsubseteq \{5\}
+        \end{displaymath}
+        Logo, $A^C \nsubseteq B^C$. Contudo, de acordo com uma das propriedades do complementar, \enquote{se $A \subseteq B$, então $B^C \subseteq A^C$}. Logo, vejamos se é de fato:
+        \begin{align*}
+            B^C \subseteq A^C \implies \{5\} \subseteq \{2, 5, 8\}
+        \end{align*}
+        Portanto, a inclusão de $B^C$ em $A^C$ é válida.
+        \item \enquote{$A \subsetneq B$} \\
+        Sejam os conjuntos $A = \{1, 2, 3\}, B = \{1, 2, 3, 4, 5, 6\}$. Temos, portanto, que, para qualquer $x \in A$, também $x \in B$; mas, tomando um $y \in B$, não é sempre verdadeiro que $y \in A$. Logo, $A \subseteq B$ e $B \nsubseteq A$, o que configura a inclusão própria, representada por $A \subsetneq B$.
+        \item \enquote{$(A \cap B)^C \ne A^C \cap B^C$. Qual o conjunto que será sempre igual a $(A \cap B)^C?$} \\
+        Sejam os conjuntos $A = \{2, 4, 6\}, B = \{3, 6, 9\}, \U = A \cup B$. Assim, temos:
+        \begin{align*}
+        (A \cap B)^C &\ne A^C \cap B^C \\ =
+            (\{2, 4, 6\} \cap \{3, 6, 9\})^C &\ne (\{2, 4, 6\})^C \cap (\{3, 6, 9\})^C \\
+            =
+            (\{6\})^C &\ne (\{3, 9\}) \cap (\{2, 4\}) \\ =
+            \{2, 3, 4, 9\} &\ne \emptyset
+        \end{align*}
+        De acordo com as Leis de DeMorgan, nós temos que o conjunto $(A \cap B)^C$ pode ser escrito da seguinte forma:
+        \begin{align*}
+            A^C \cup B^C &= (\{2, 4, 6\})^C \cup (\{3, 6, 9\})^C \\ \implies
+            \{3, 9\} \cup \{2, 4\} &= \{2, 3, 4, 9\}
+        \end{align*}
+        Assim, concluímos que os conjuntos são iguais.
+    \end{enumerate}

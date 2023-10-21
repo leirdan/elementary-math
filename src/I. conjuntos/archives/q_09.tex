@@ -1,0 +1,17 @@
+\enquote{Sejam $A, B, C, D$ conjuntos. Use propriedades do nosso material para obter um conjunto igual ao escrito abaixo somente com interseções de, no máximo, 3 conjuntos.}
+\begin{displaymath}
+    [A^C \cap B \cap (C \cup D^C)^C] \cup [A \cap (B^C \cup C)^C \cap D]
+\end{displaymath}
+\emph{Resolução}. Temos:
+\begin{align*}
+    [A^C \cap B &\cap (C \cup D^C)^C] \cup [A \cap (B^C \cup C)^C \cap D] 
+    \\ &=
+    (A^C \cap B \cap C^C \cap D) \cup (A \cap B \cap C^C \cap D) \quad \text{(DeMorgan)}
+    \\ &=
+    (B \cap C^C \cap D) \cup (A^C \cap A) \quad \text{(Distributividade)}
+    \\ &=
+    (B \cap C^C \cap D) \cup \emptyset \quad (A^C \cap A = \emptyset) 
+    \\ &= 
+    B \cap C^C \cap D
+\end{align*}
+Encontramos, então, um conjunto equivalente ao inicial proposto.

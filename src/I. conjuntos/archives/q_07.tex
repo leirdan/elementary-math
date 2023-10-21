@@ -1,0 +1,8 @@
+\enquote{Sejam $A, B$ conjuntos quaisquer. Classifique como verdadeiro ou falso cada sentença abaixo. Justifique ou dê um contra-exemplo para o caso da sentença ser falsa.}
+    \begin{enumerate}
+        \item $(A \backslash B) \subseteq B$; \\
+        \emph{Falsa}. Suponha, por absurdo, que a afirmação é verdadeira. Logo, existe $x$ tal que $x \in (A \backslash B)$ e $x \in B$. Contudo, se $x \in (A \backslash B)$, então $x \in A$ e $x \notin B$, o que é um absurdo pois, anteriormente, definimos que $x \in B$. Logo, a proposição é falsa.
+        \item $(A \backslash B) \subseteq (A \cup B)$; \\
+        \emph{Verdadeira}. 
+        Suponha que $(A \backslash B) \nsubseteq (A \cup B)$. Assim, por definição de diferença, existe um elemento $x$ tal que $x \in (A \backslash B)$, ou seja, $x \in A, x \notin B$. Contudo, se $(A \backslash B) \nsubseteq (A \cup B)$, então $x \notin (A \cup B)$, o que significa que, pela definição de união, $x \notin A \text{ nem } x \notin B$. Isso é um notável absurdo pois $x \in A$ e $x \notin A$ simultaneamente. Logo, a proposição é verdadeira.
+    \end{enumerate}

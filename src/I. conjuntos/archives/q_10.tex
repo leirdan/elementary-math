@@ -1,0 +1,22 @@
+\enquote{O Diagrama de Venn para os conjuntos $X, Y, Z$ decompõe o plano em oito regiões. Numere essas regiões e exprima cada um dos conjuntos abaixo como reunião de algumas dessas regiões. (Por exemplo: $X \cap Y = 1 \cup 2$)} \\
+Tome o diagrama como base:\\
+\begin{center}
+    \begin{venndiagram3sets}[labelA=X, labelB=Y, labelC=Z, labelOnlyA=1, labelOnlyB=2, labelOnlyC=3, labelOnlyAB=4, labelOnlyAC=5, labelOnlyBC=6, labelABC=7, labelNotABC=8]
+    \end{venndiagram3sets}
+\end{center}
+\begin{enumerate}
+    \item $(X^C \cup Y)^C \\= (\{2, 3, 6, 8\} \cup \{2, 4, 6, 7\})^C \\= (\{2, 3, 4, 6, 7, 8\})^C \\= \{1, 5\} $
+    \item $(X^C \cup Y) \cup Z^C \\= (\{2, 3, 6, 8\} \cup \{2, 4, 6, 7\}) \cup \{1, 2, 4\} \\=
+    \{2, 3, 4, 6, 7, 8\} \cup \{1, 2, 4\} \\=
+    \{1, 2, 3, 4, 6, 7, 8\} $
+    \item $(X^C \cap Y) \cup (X \cap Z^C) \\=
+    (\{2, 3, 6, 8\} \cap \{2, 4, 6, 7\} ) \cup (\{1, 4, 5, 7\} \cap \{1, 2, 4, 8\} ) \\=
+    (\{2, 6\} \cup \{1, 4\}) \\=
+    \{1, 2, 4, 6\}$
+    \item $(X \cup Y)^C \cap Z \\=
+    (\{1, 4, 5, 7\} \cup \{2, 4, 6, 7\})^C
+    \cap \{3, 5, 6, 7\} \\=
+    (\{1, 2, 4, 5, 6, 7\})^C \cap \{3, 5, 6, 7\}\\=
+    \{3, 8\} \cap \{3, 5, 6, 7\} \\=
+    \{3\}$
+\end{enumerate}

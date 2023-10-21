@@ -1,0 +1,46 @@
+\enquote{Sejam $A, B, C$ conjuntos tais que $A \cup B \cup C = \U$. Em cada um dos itens, use propriedades para obter um conjunto igual aos escritos abaixo somente com \textbf{uniões de conjuntos}.}
+\begin{enumerate}
+    \item $A \cup (B \cap C^C) \cup (A^C \cap B^C \cap C^C) \cup C$; \\
+    \emph{Resolução.} Temos:
+    \begin{align*}
+       A &\cup (B \cap C^C) \cup (A^C \cap B^C \cap C^C) \cup C \\ &=
+       A \cup (B \cap C^C) \cup [A^C \cap (B^C \cap C^C)] \cup C \quad \text{(Associatividade)} \\ &=
+       A \cup (B \cap C^C) \cup [A^C \cap (B \cup C)^C] \cup C \quad \text{(DeMorgan)} \\ &=
+       A \cup (B \cap C^C) \cup [A \cup B \cup C]^C \cup C \quad \text{(DeMorgan)} \\ &=
+       A \cup (B \cap C^C) \cup \emptyset \cup C \quad (\U^C = \emptyset) \\ &= 
+       A \cup [(B \cap C^C) \cup C] \quad \text{(Associatividade)} \\ &=
+       A \cup [(B \cup C) \cap (C^C \cup C)] \quad \text{(Distributividade)} \\ &=
+       A \cup [(B \cup C) \cap \U] \quad (C^C \cup C = \U) \\ &=
+       A \cup B \cup C \quad (A \cap \U = A) \\ &=
+       \U
+    \end{align*}
+    \item $[(A^C \cap B \cap C) \cup (A \cap B \cap C)]^C$ \\
+    \emph{Resolução.} Temos:
+    \begin{align*}
+        [(A^C &\cap B \cap C) \cup (A \cap B \cap C)]^C\\ &=
+        (A^C \cap B \cap C)^C \cap (A \cap B \cap C)^C \quad \text{(DeMorgan)} \\ &=
+        [A \cup (B \cap C)^C] \cap [A^C \cup (B \cap C)^C] \quad \text{(DeMorgan)} \\ &=
+        (B \cap C)^C \cup (A \cap A^C) \quad (\text{Distributividade}) \\ &=
+        (B \cap C)^C \cup \emptyset \\ &=
+        (B \cap C)^C \\ &=
+        B^C \cup C^C
+     \end{align*}
+    \item $[(A \cup B^C \cup C) \cup (B \cup C^C)]^C$ \\ 
+    \emph{Resolução.} Temos:
+    \begin{align*}
+        [(A &\cup B^C \cup C) \cup (B \cup C^C)]^C \\ &=
+        (A \cup B^C \cup C)^C \cap (B \cup C^C)^C \quad (\text{DeMorgan}) \\ &=
+        [A^C \cap (B^C \cup C)^C] \cap (B \cup C^C)^C \quad \text{(DeMorgan)} \\ &=
+        A^C \cap (B \cap C^C) \cap (B \cup C^C)^C \quad \text{(DeMorgan)} \\ &=
+        A^C \cap (B \cap C^C) \cap (B^C \cap C) \quad \text{(DeMorgan)} \\ &= 
+        A^C \cap (B \cap B^C) \cap (C \cap C^C) \quad \text{(Comutatividade)} \\ &=
+        (A^C \cap \emptyset) \cap \emptyset \\ &=
+        \emptyset
+    \end{align*}
+    \item $[(A \cup B^C \cup C) \cap (B \cap C^C)]^C$
+    \\ 
+    \emph{Resolução.} Temos:
+    \begin{align*}
+        [(A &\cup B^C \cup C) \cap (B \cap C^C)]^C \\ & =
+    \end{align*}
+\end{enumerate}

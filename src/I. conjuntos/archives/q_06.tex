@@ -1,0 +1,24 @@
+\enquote{As igualdades abaixo acerca dos conjuntos $A, B, C$ não são válidas geralmente. Em cada um dos itens, dê um exemplo que ilustre esse fato:}
+    \begin{enumerate}
+        \item $A \backslash (B \cap C) = (A \backslash B) \cap (A \backslash C)$; \\
+            Sejam $A = \{1, 4\}, B = \{1, 8\}, C = \{4, 9\}$. Temos:
+            \begin{align*}
+                A \backslash (B \cap C) &= (A \backslash B) \cap (A \backslash C) \\ \implies
+                \{1, 4\} \backslash (\{1, 8\} \cap \{4, 9\} &= (\{1,4\} \backslash \{1, 8\}) \cap \{1,4\} \backslash \{4, 9\}) \\ 
+                \implies
+                \{1, 4\} \backslash \emptyset &= \{4\} \cap \{1\} \\ 
+                \implies 
+                \{1, 4\} &= \emptyset
+            \end{align*}
+            Chegamos em um absurdo, logo, a proposição não é válida para este caso.
+        \item $A \backslash (B \cup C) = (A \backslash B) \cup (A \backslash C)$; \\
+        Sejam $A = \{1, 4\}, B = \{1, 8\}, C = \{4, 9\}$. Temos:
+        \begin{align*}
+            A \backslash (B \cup C) &= (A \backslash B) \cup (A \backslash C) \\
+            \implies 
+            \{1, 4\} \backslash (\{1, 8\} \cup \{4, 9\} &= (\{1,4\} \backslash \{1, 8\}) \cup \{1,4\} \backslash \{4, 9\}) \\ 
+            \{1, 4\} \backslash \{1, 4, 8, 9 \} &= \{4\} \cup \{1\} \\ \implies
+            \emptyset &= \{1, 4\}
+        \end{align*}
+        Chegamos a um absurdo. Portanto a proposição não é válida para este caso.
+    \end{enumerate}
