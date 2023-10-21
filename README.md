@@ -13,5 +13,5 @@ O repositório está organizado nos seguintes diretórios:
             * `main.pdf`: o documento final compilado.
 
 ## Detalhes
-* Essas são as *minhas* resoluções das questões, não necessariamente as mais corretas ou alinhadas ao que o professor pede.
+* Essas são as *minhas* resoluções das questões, não necessariamente as mais corretas ou com melhor método de resolução. 
 * Se encontrar alguma resposta errada ou tiver uma sugestão de como posso melhorar, envie um e-mail para **uouleirdan@gmail.com**; agradeço qualquer feedback.
