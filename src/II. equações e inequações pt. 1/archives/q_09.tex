@@ -1,0 +1,48 @@
+\enquote{Sejam $\alpha_1$ e $\alpha_2$ as raízes da equação do 2° grau $ax^2 + bx + c = 0$. Calcule as seguintes expressões em função de $a, b \text{ e } c$:}
+\begin{enumerate}
+    \item $\frac{\alpha_1 + \alpha_2}{2}$;
+    \\
+    \emph{Resolução.} Temos, por soma das raízes, que $\alpha_1 + \alpha_2 = \frac{-b}{a}$. Logo, temos:
+    \begin{align*}
+        \frac{\alpha_1 + \alpha_2}{2} & = \frac{\frac{-b}{a}}{2} \\ & =
+        \frac{-b}{2a}
+    \end{align*}
+    \item $\sqrt{\alpha_1 \cdot \alpha_2}$;
+    \\
+    \emph{Resolução.} Temos, por produto das raízes, que $\alpha_1 \cdot \alpha_2 = \frac{c}{a}$. Logo, temos:
+    \begin{align*}
+        \sqrt{\alpha_1 \cdot \alpha_2} & = \sqrt{\frac{c}{a}} \\ & =
+        \frac{\sqrt{c}}{\sqrt{a}} \\
+    \end{align*}
+    \item $\sqrt{\alpha_1} + \sqrt{\alpha_2}$;
+    \\
+    \emph{Resolução.} Temos:
+    \begin{align*}
+        &\sqrt{\alpha_1} + \sqrt{\alpha_2} =
+        \sqrt{\frac{-b + \sqrt{b^2 - 4ac}}{2a}} + \sqrt{\frac{-b - \sqrt{b^2 - 4ac}}{2a}} 
+        \\ & \implies
+        (\sqrt{\alpha_1} + \sqrt{\alpha_2})^2 = (\sqrt{\frac{-b + \sqrt{b^2 - 4ac}}{2a}} + \sqrt{\frac{-b - \sqrt{b^2 - 4ac}}{2a}})^2
+        \\ & =
+        (\sqrt{\frac{-b + \sqrt{b^2 - 4ac}}{2a}})^2 + 
+         2\cdot (\sqrt{\frac{-b + \sqrt{b^2 - 4ac}}{2a}}) \\ &\cdot (\sqrt{\frac{-b - \sqrt{b^2 - 4ac}}{2a}}) + (\sqrt{\frac{-b - \sqrt{b^2 - 4ac}}{2a}})^2 \\ & =
+        \frac{-b + \sqrt{b^2 - 4ac}}{2a} +
+        2 \cdot (\frac{\sqrt{-b + \sqrt{b^2 - 4ac} \cdot (-b - \sqrt{b^2 - 4ac})}}{4a^2})
+        \\ & + \frac{-b - \sqrt{b^2 - 4ac}}{2a} 
+        \\ & =
+        \frac{-b + \sqrt{b^2 - 4ac}}{2a} + 2 \cdot(\sqrt{\alpha_1 \cdot \alpha_2}) + \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+        \\ & =
+        2 \cdot \sqrt{\alpha_1 \cdot \alpha_2}\footnote{Calculado no item b)} + \frac{-b + \sqrt{b^2 - 4ac}}{2a} + \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+        \\ & =
+        2 \cdot \sqrt{\alpha_1 \cdot \alpha_2} + \frac{-b + \sqrt{b^2 - 4ac} + (-b) - \sqrt{b^2 - 4ac}}{2a}
+        \\ & =
+        2 \cdot \sqrt{\alpha_1 \cdot \alpha_2} + \frac{-2b + \sqrt{b^2 - 4ac} - \sqrt{b^2 - 4ac}}{2a}
+        \\ & \implies
+        (\sqrt{\alpha_1} + \sqrt{\alpha_2})^2 =
+        2 \cdot \sqrt{\frac{c}{a}} + \frac{-b}{a}
+        \\ & \implies
+        \sqrt{\alpha_1} + \sqrt{\alpha_2} = \sqrt{2 \cdot \sqrt{\frac{c}{a}} + \frac{-b}{a}}
+    \end{align*}
+    \item $\sqrt[4]{\alpha_1} + \sqrt[4]{\alpha_2}$;
+    \\
+    \emph{Resolução.} Não fiz.
+\end{enumerate}

@@ -1,0 +1,69 @@
+\enquote{Determine o produto das raízes da equação $7 + \sqrt{x^2 - 1} = x^2$.}
+\\
+\emph{Resolução}. Temos:
+\begin{align*}
+    7 + \sqrt{x^2 - 1} = x^2 & \implies \sqrt{x^2 - 1} = x^2 - 7 \\ & \implies
+    (\sqrt{x^2 - 1})^2 = (x^2 - 7)^2 \\ & \implies
+    x^2 - 1 = x^4 - 2\cdot x^2 \cdot 7 + 49 \\ & \implies 
+    x^2 - 1 = x^4 - 14x^2 + 49 \\ & \implies
+    x^4 - 14x^2 - x^2 + 50 = 0 \\ & \implies
+    x^4 - 15x^2 + 50 = 0
+\end{align*}
+Tomando $y = x^2$ temos:
+\begin{align*}
+    y^2 - 15y + 50 = 0
+\end{align*}
+Vamos calcular as raízes:
+\begin{align*}
+    \text{Discriminante} \\
+    \Delta = 225 - 200 = 25 
+    \\ \text{Fórmula} \\
+    y = \frac{15 \pm \sqrt{25}}{2} & =
+    \frac{15 \pm 5}{2}
+    \\ \text{Raízes} \\
+    y_1 = \frac{15 + 5}{2} & \implies y_1 = 10 \\
+    y_2 = \frac{15 - 5}{2} & \implies y_2 = 5
+\end{align*}
+Como $y = x^2$, temos que:
+\begin{align*}
+    y_1 = x_1^2 & \implies 10 = x_1^2 \implies \sqrt{x_1^2} = \sqrt{10} \implies x_1 = \pm \sqrt{10} \\ 
+    y_2 = x_2^2 & \implies 5 = x_2^2 \implies \sqrt{x_2^2} = \sqrt{5} \implies x_2 = \pm \sqrt{5}
+\end{align*}
+Vamos testar cada um dos casos:
+\begin{itemize}
+    \item $x_1 = \sqrt{10}$: \emph{Verdadeiro}.
+    \begin{align*}
+        &(\sqrt{10})^4 - 15 \cdot (\sqrt{10})^2 + 50 = 0 \\ & \implies
+        10^2 - 15 \cdot 10 + 50 = 0 \\ & \implies
+        100 - 150 + 50 = 0 \\ & \implies
+        0 = 0
+    \end{align*}
+    \item $x_1 = -\sqrt{10}$: \emph{Verdadeiro}.
+    \begin{align*}
+        &(-\sqrt{10})^4 - 15 \cdot (-\sqrt{10})^2 + 50 = 0 \\ & \implies
+        10^2 - 15 \cdot 10 + 50 = 0 \\ & \implies
+        100 - 150 + 50 = 0 \\ & \implies
+        0 = 0
+    \end{align*}
+    \item $x_2 = \sqrt{5}$: \emph{Verdadeiro}.
+    \begin{align*}
+        &(\sqrt{5})^4 - 15 \cdot (\sqrt{5})^2 + 50 = 0 \\ & \implies 
+        25 - 15 \cdot 5 + 50 = 0 \\ & \implies
+        0 = 0
+    \end{align*}
+    \item $x_2 = -\sqrt{5}$: \emph{Verdadeiro}.
+    \begin{align*}
+        &(-\sqrt{5})^4 - 15 \cdot (-\sqrt{5})^2 + 50 = 0 \\ & \implies 
+        25 - 15 \cdot 5 + 50 = 0 \\ & \implies
+        0 = 0
+    \end{align*}
+\end{itemize}
+Sabendo que tais raízes são verdadeiras e reais e conhecendo a propriedade de potências no formato $\frac{m}{n}$ tomemos seu produto:
+\begin{align*}
+    &\sqrt{10} \cdot (-\sqrt{10}) \cdot \sqrt{5} \cdot (-\sqrt{5}) \\ &= 
+    10^{\frac{1}{2}} \cdot (-10^{\frac{1}{2}}) \cdot 5^{\frac{1}{2}} \cdot (-5^{\frac{1}{2}}) \\ &=
+    (-10^{\frac{1}{2} + \frac{1}{2}}) \cdot (-5^{\frac{1}{2} + \frac{1}{2}}) \\ &=
+    -10 \cdot (-5) \\ &=
+    50
+\end{align*}
+Portanto, o produto das raízes da equação é 50.

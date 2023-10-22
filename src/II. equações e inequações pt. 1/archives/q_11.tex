@@ -1,0 +1,33 @@
+\enquote{Uma equação biquadrada tem duas de suas raízes iguais a $\sqrt{2}$ e 3. Determine o valor do coeficiente de 2º grau dessa equação.} 
+\\
+\emph{Resolução.} Tome $ax^4 + bx^2 + c = 0$ como uma equação biquadrada. A partir disso, considere as seguintes equações formadas a partir da substituição do $x$ por cada uma das raízes $\sqrt{2}$ e 3, tomando $a = 1$:
+\begin{align*}
+    \left\{ 
+        \begin{matrix}
+            1 \cdot (\sqrt{2})^4 + b \cdot (\sqrt{2})^2 + c & = 0 \\
+            1 \cdot (3)^4 + b \cdot (3)^2 + c & = 0
+        \end{matrix}
+    \right.
+\end{align*}
+Tomando a equação inferior, definimos $c$ como:
+\begin{align*}
+    1 \cdot (3)^4 + b \cdot (3)^2 + c = 0 & \implies 81 + 9b + c = 0 \\ & \implies
+    c = - 9b - 81
+\end{align*}
+Aplicando na equação superior para descobrir $b$:
+\begin{align*}
+    1 \cdot (\sqrt{2})^4 + b \cdot (\sqrt{2})^2 - 9b - 81 = 0 & \implies
+    4 + 2b - 9b - 81 = 0 \\ & \implies
+    77 - 7b = 0 \\ & \implies
+    11 - b = 0 \\ & \implies
+    11 = b
+\end{align*}
+Agora vamos descobrir $c$:
+\begin{align*}
+    c = -9\cdot11 - 81 \implies c = -99 - 81 \implies c = -180
+\end{align*}
+Podemos, por fim, substituir os valores na equação inferior para descobrir se resultam em uma verdade:
+\begin{align*}
+    1 \cdot 81 + (11 \cdot 9) + (-180) = 0 & \implies 81 + 99 - 180 = 0 \implies 0 = 0
+\end{align*}
+Como chegamos em um resultado verdadeiro temos que o coeficiente $b$, o qual acompanha o termo de 2º grau na equação, é igual a 11.

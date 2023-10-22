@@ -1,0 +1,40 @@
+\enquote{Determine o(s) valor(es) de $m \in \R$ tal(is) que a equação $mx^2 + (m + 1)x + (m + 1) = 0$ tenha somente uma raiz real.}
+\\
+\emph{Resolução.} Calculemos o discriminante desta equação, a princípio:
+\begin{align*}
+    \Delta = b^2 - 4ac & \implies (m + 1)^2 - 4 \cdot m \cdot (m + 1) \\ & \implies 
+    m^2 + 2m + 1 - 4 \cdot (m^2 + m) \\ & \implies
+    m^2 + 2m + 1 - 4m^2 - 4m \\ & \implies
+    -3m^2 - 2m + 1
+\end{align*}
+Chegamos em uma equação do segundo grau. Então vamos calcular suas raízes e verificar $m$.
+\begin{align*}
+    m = \frac{2 \pm \sqrt{4 - (-12)}}{-6} & \implies
+    \frac{2 \pm \sqrt{16}}{-6} \\ & \implies 
+    \frac{2 \pm 4}{-6}
+\end{align*}
+Vejamos as possibilidades de $m$:
+\begin{displaymath}
+    m_1 = \frac{2 + 4}{-6} = -1 ; m_2 = \frac{2 - 4}{-6} = -\frac{1}{3}
+\end{displaymath}
+Vamos aplicar na equação encontrada no discriminante cada uma das possibilidades:
+\begin{itemize}
+    \item Se $m = -1$:
+    \begin{align*}
+        -3m^2 - 2m + 1 = 0 & \implies -3\cdot(-1)^2 - 2\cdot(-1) + 1 = 0 \\ & \implies 
+        -3 + 2 + 1 = 0 \\ & \implies
+        0 = 0
+    \end{align*}
+    Esta conclusão é verdadeira, então essa possibilidade para $m$ é válida.
+    \item Se $m = -\frac{1}{3}$:
+    \begin{align*}
+        -3m^2 - 2m + 1 = 0 & \implies -3\cdot(-\frac{1}{3})^2 - 2\cdot(-\frac{1}{3}) + 1 = 0 \\ & \implies
+        -1 + \frac{2}{3} + 1 = 0 \\ & \implies
+        \frac{-3 + 2}{3} + 1 = 0 \\ & \implies
+        \frac{-1}{3} + 1 = 0 \\ & \implies
+        \frac{-1 + 3}{3} = 0 \\ & \implies
+        \frac{2}{3} = 0
+    \end{align*}
+    Podemos concluir que tal resultado não é verdadeiro; logo, tal possibilidade de valor para $m$ não é válida.
+\end{itemize}
+Assim, para que a equação $mx^2 + (m + 1)x + (m + 1) = 0$ tenha somente uma raiz real, é necessário que $m = -1$.
