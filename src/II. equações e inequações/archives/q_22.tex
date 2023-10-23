@@ -1,0 +1,42 @@
+\enquote{Prove que $|x \cdot y| = |x| \cdot |y|$, para todo $x, y \in \R$}.
+\\ \emph{Resolução}. Temos, por definição:
+\begin{displaymath}
+    |x| = \left\{\begin{array}{cc}
+         x \text{ se } x \ge 0 &  \\
+         -(x), \text{ se } x < 0 & 
+    \end{array}\right.
+\end{displaymath}
+
+\begin{displaymath}
+    |y| = \left\{\begin{array}{cc}
+            y, \text{ se } y \ge 0 &  \\
+         -(y), \text{ se } y < 0 & 
+    \end{array}\right.
+\end{displaymath}
+
+\begin{displaymath}
+    |x \cdot y| = \left\{\begin{array}{cc}
+         x\cdot y, \text{ se } x \cdot y \ge 0 &  \\
+         -(x\cdot y), \text{ se } x \cdot y < 0 & 
+    \end{array}\right.
+\end{displaymath}
+Podemos utilizar a partição em intervalos:
+\begin{itemize}
+    \item Se $x, y \ge 0$:
+    \begin{align*}
+        |x \cdot y| = |x| \cdot |y| & \implies |x \cdot y| = x \cdot y \\ & \implies
+        x \cdot y = x \cdot y
+    \end{align*}
+    
+    \item Se $x \ge 0, y < 0$: \emph{O resultado é análogo para $x < 0, y \ge 0$}.
+    \begin{align*}
+    |x \cdot y| = |x \cdot |y| & \implies |x \cdot y| = -(x \cdot y) \\ & \implies -(x\cdot y) = -(x \cdot y)
+    \end{align*}
+    
+    \item Se $x, y < 0$:
+    \begin{align*}
+    |x \cdot y| = |x| \cdot |y| & \implies |x \cdot y| = -x \cdot (-y) \\ & \implies |x \cdot y| = x \cdot y \\ & \implies
+        x \cdot y = x \cdot y
+    \end{align*}
+\end{itemize}
+Portanto, está provada a equivalência das expressões.

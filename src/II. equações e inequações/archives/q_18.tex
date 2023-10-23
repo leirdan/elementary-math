@@ -1,0 +1,20 @@
+\enquote{Mostre que se $r, s$ são números racionais positivos satisfazendo $r < s$, então existe um outro número racional $q$ tal que $r < q < s$.}
+\\ \emph{Resolução.} Podemos reescrever os números como $r = \frac{a}{b}, s = \frac{c}{d}$, onde $a, b, c, d \in \mathbb{R}$ e $b, d \ne 0$. Tomando $ q =\frac{a + c}{2 \cdot b \cdot d}$, provemos que $r < q$:
+\begin{align*}
+    r < s & \implies \frac{a}{b} < \frac{c}{d} \\ & \implies
+    \frac{a}{b} + \frac{a}{b} < \frac{a}{b} + \frac{c}{d} \\ & \implies
+    \frac{2a}{b} < \frac{a}{b} + \frac{c}{d} \\ & \implies
+    \frac{a}{b} < \frac{\frac{a}{b} + \frac{c}{d}}{2} \quad (\cdot \frac{1}{2}) \\ & \implies
+    \frac{a}{b} < \frac{a + c}{2 \cdot b \cdot d}
+\end{align*}
+Provemos agora que $q < s$:
+\begin{align*}
+    r < s & \implies \frac{a}{b} < \frac{c}{d} \\ & \implies
+    \frac{a}{b} + \frac{c}{d} < \frac{2c}{d} \\ & \implies
+    \frac{\frac{a}{b} + \frac{c}{d}}{2} < \frac{c}{d} \\ & \implies
+    \frac{a + c}{2\cdot b \cdot d} < \frac{c}{d}
+\end{align*}
+Então, temos provado que
+\begin{displaymath}
+    r < q < s
+\end{displaymath}
