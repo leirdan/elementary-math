@@ -1,0 +1,25 @@
+\enquote{Considere 
+\begin{displaymath}
+    f: [3,5; +\infty[ \rightarrow  [-2,25; + \infty[
+\end{displaymath}
+tal que $f(x) = x^2 - 7x + 10$. Prove que $f$ é bijetiva.}
+\\ \emph{Resolução}. Provemos primeiro sua sobrejetividade. Seja $y \in [-2,25; + \infty[$; logo, se a função é sobrejetiva, existe um número $\sqrt{y + \frac{9}{4}} + \frac{7}{2}$ tal que
+\begin{align*}
+    f(\sqrt{y + \frac{9}{4}} + \frac{7}{2}) & = (\sqrt{y + \frac{9}{4}} + \frac{7}{2})^2 - 7 \cdot (\sqrt{y + \frac{9}{4}} + \frac{7}{2}) + 10 \\ & =
+    y + \frac{9}{4} + 2\cdot\frac{7}{2}\cdot \sqrt{y + \frac{9}{4}} + \frac{49}{4} -7\sqrt{y + \frac{9}{4}} - \frac{49}{2} + 10 \\ & =
+    y + \frac{9}{4} + \frac{49}{4} - \frac{49}{2} + 10 \\ & =
+    y + \frac{58}{4} - \frac{29}{2} \\ & =
+    y + \frac{58 - 58}{4} \\ & =
+    y
+\end{align*}
+Portanto, está provada a sobrejetividade. \\
+Por fim, provemos sua injetividade. Tomando $a, b \in [3,5; +\infty[$, temos que
+\begin{align*}
+    f(a) = f(b) & \implies a^2 - 7a + 10 = b^2 - 7b + 10 \\ & \implies
+    a^2 - 7a = b^2 - 7b \\ & \implies
+    a^2 - 7a + (\frac{7}{2})^2 = b^2 - 7a + (\frac{7}{2})^2 \\ & \implies
+    (a - \frac{7}{2})^2 = (b - \frac{7}{2})^2 \\ & \implies
+    a - \frac{7}{2} = b - \frac{7}{2} \\ & \implies
+    a = b
+\end{align*}
+Assim está provada a injetividade e, consequentemente, a bijetividade da função.

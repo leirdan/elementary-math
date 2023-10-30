@@ -1,0 +1,14 @@
+\emph{Resolução}: Tomando $mdc$ como uma função que calcula o máximo divisor comum entre dois números, seja a função 
+\begin{align*}
+    f: \mathbb{N}^2 &\rightarrow \mathbb{N}^* \\
+   a, b &\rightarrow mdc(a, b).
+\end{align*} 
+\par Injetividade: \textbf{não}, visto que 
+    \begin{displaymath}
+        f(6, 2) = 2 = f(4, 2)
+    \end{displaymath}
+\par Sobrejetividade: \textbf{sim}. Tomando $x \in \N^*$ e $a, b \in \N$, temos:
+    \begin{displaymath}
+        f(a, b) \implies mdc(a, b) = x.
+    \end{displaymath}
+    Como é válido para qualquer $x \in \mathbb{N}^*$ temos que a função é sobrejetiva.
