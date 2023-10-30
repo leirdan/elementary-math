@@ -1,0 +1,40 @@
+\emph{Resolução.} Tomando a matriz acima como $D$, calculemos $\det D$ com cofatores:
+\begin{align*}
+    &\left|\begin{array}{ccccc}
+        4 & 0 & 0 & 1 & 0 \\
+        3 & 3 & 3 & -1 & 0 \\
+        1 & 2 & 4 & 2 & 3 \\
+        9 & 4 & 6 & 2 & 3 \\
+        2 & 2 & 4 & 2 & 3 \\
+    \end{array}\right| \quad (l_5 \rightarrow l_5 - l_3) = \\
+    &\left|\begin{array}{ccccc}
+        4 & 0 & 0 & 1 & 0 \\
+        3 & 3 & 3 & -1 & 0 \\
+        1 & 2 & 4 & 2 & 3 \\
+        9 & 4 & 6 & 2 & 3 \\
+        1 & 0 & 0 & 0 & 0 \\
+    \end{array}\right|
+\end{align*}
+Fixando a linha 5 temos:
+\begin{align*}
+    \det D &= a_{51} \cdot C_{51} + a_{52} \cdot C_{52} + a_{53} \cdot C_{53} + a_{54} \cdot C_{54} + a_{55} \cdot C_{55} \\ &=
+    a_{51} \cdot (-1)^{5 + 1} \cdot \det \left|\begin{array}{cccc}
+         0 & 0 & 1 & 0  \\
+         3 & 3 & -1 & 0 \\
+         2 & 4 & 2 & 3 \\
+         4 & 6 & 2 & 3 \\
+    \end{array} \right|
+\end{align*}
+Na matriz menor $D_{51}$ fixamos a linha 1 e obtemos:
+\begin{align*}
+    \det D_{51} &= a_{11} \cdot C_{11} + a_{12} \cdot C_{12} + a_{13} \cdot C_{13} + a_{14} \cdot C_{14} \\ &=
+    a_{13} \cdot (-1)^{1 + 3} \cdot \det 
+    \left|\begin{array}{ccc}
+         3 & 3& 0 \\
+         2 & 4& 3 \\
+         4 & 6 & 3
+    \end{array}\right| \\ &=
+    1 \cdot 1 \cdot [(36 + 36 + 0) - (0 + 18 + 54)] \\ &=
+    0
+\end{align*}
+Aplicando o resultado de $\det D_{51}$ no cálculo de $\det D$ teremos como resultado final 0. Não há, portanto, matriz inversa de $D$.

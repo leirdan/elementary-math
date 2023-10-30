@@ -1,0 +1,19 @@
+\enquote{Sejam $A$ e $B$ matrizes $m \times n$ e $n \times p$ respectivamente. A afirmação abaixo é sempre válida?}
+\begin{displaymath}
+    \text{Se } AB = 0_{m\times p}, \text{ então } A = 0_{m\times p} \text{ ou }
+    B = 0_{m\times p}
+\end{displaymath}
+\\ 
+\emph{Resolução}. Não. Suponha as matrizes $A_{2\times2}, B_{2\times2}$
+\begin{displaymath}
+    A = \left[\begin{array}{cc} 0 & 0 \\ -1 & 0 \end{array}\right],
+    B = \left[\begin{array}{cc} 0 & 0 \\ 0 & 1 \end{array}\right]
+\end{displaymath}
+Façamos seu produto, que será armazenado na matriz $C_{2\times2}$:
+\begin{align*}
+    &C_{11} = 0\cdot0 + 0 \cdot 0 = 0 \\
+    &C_{12} = 0 \cdot 0 + 0 \cdot 1 = 0 \\
+    &C_{21} = -1 \cdot 0 + 0 \cdot 0 = 0 \\
+    &C_{22} = -1\cdot 0 + 0 \cdot 1 = 0
+\end{align*}
+Assim, temos um caso onde o produto de duas matrizes é nulo, mas elas não. Logo, a afirmação não é válida para todos os casos.

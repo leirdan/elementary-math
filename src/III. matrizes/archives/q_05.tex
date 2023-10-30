@@ -1,0 +1,87 @@
+\enquote{Seja
+\begin{displaymath}
+    A = \left[\begin{array}{cccc}
+         3& -6 & 2 & -1  \\
+         -2 & 4 & 1 & 3 \\
+         0 & 0 & 1 & 1 \\
+         1 & -2 & 1 & 0 
+    \end{array}\right]
+\end{displaymath} 
+Para quais matrizes $B_{4\times1}$ o sistema $AX = B$ tem solução?}
+\\ 
+\emph{Resolução}. Sendo
+\begin{displaymath}
+    B = \left[\begin{array}{c}
+         b_1 \\
+         b_2 \\
+         b_3 \\
+         b_4
+    \end{array}\right],
+    X = \left[\begin{array}{c}
+         x_1 \\
+         x_2 \\
+         x_3 \\
+         x_4
+    \end{array}\right]
+\end{displaymath}
+e tomando o seguinte sistema linear:
+\begin{displaymath}
+    \left\{\begin{array}{ccccc}
+         3x_1&- 6x_2 &+ 2x_3 &- x_4 & =b_1  \\
+         -2x_1 &+ 4x_2 &+ x_3 &+ 3x_4 & =b_2\\
+            & &+ x_3 &+ x_4 & =b_3\\
+         x_1 &- 2x_2 &+ x_3 & & = b_4
+    \end{array}\right.
+\end{displaymath}
+Teremos a seguinte matriz aumentada $(A|B)$:
+\begin{align*}
+    (A|B) = &\left[\begin{array}{ccccc}
+         3 & -6 & 2 & -1 & b_1  \\
+         -2 & 4 & 1 & 3 & b_2 \\
+         0 & 0 & 1 & 1 & b_3 \\
+         1 & -2 & 1 & 0 & b_4  
+    \end{array}\right] \quad (l_1 \leftrightarrow l_4) \\ \rightarrow 
+    &\left[\begin{array}{ccccc}
+         1 & -2 & 1 & 0 & b_4  \\
+         -2 & 4 & 1 & 3 & b_2 \\
+         0 & 0 & 1 & 1 & b_3 \\
+         3 & -6 & 2 & -1 & b_1 
+    \end{array}\right] \quad (l_4 \rightarrow l_4 - 3l_1; l_2 \rightarrow l_2 + 2l_1) \\ \rightarrow 
+    &\left[\begin{array}{ccccc}
+         1 & -2 & 1 & 0 & b_4  \\
+         0 & 0 & 3 & 3 & b_2 + 2b_4 \\
+         0 & 0 & 1 & 1 & b_3 \\
+         0 & 0 & -1 & -1 & b_1 - 3b_4  
+    \end{array}\right] \quad (l_2 \leftrightarrow l_3) \\ \rightarrow 
+    &\left[\begin{array}{ccccc}
+         1 & -2 & 1 & 0 & b_4  \\
+         0 & 0 & 1 & 1 & b_3 \\
+         0 & 0 & 3 & 3 & b_2 + 2b_4 \\
+         0 & 0 & -1 & -1 & b_1 - 3b_4  
+    \end{array}\right] \quad (l_3 \rightarrow l_3 - 3l_2; l_4 \rightarrow l_4 + l_2) \\ \rightarrow 
+    &\left[\begin{array}{ccccc}
+         1 & -2 & 1 & 0 & b_4  \\
+         0 & 0 & 1 & 1 & b_3 \\
+         0 & 0 & 0 & 0 & b_2 + 2b_4 - 3b_3 \\
+         0 & 0 & 0 & 0 & b_1 - 3b_4  + b_3
+    \end{array}\right]
+\end{align*}
+Teremos, portanto, o seguinte sistema linear:
+\begin{align*}
+    \left\{\begin{array}{cc}
+         x_1 - 2x_2 + x_3 = b_4&  \\
+         x_3 + x_4 = b_3& \\
+         0 = b_2 + 2b_4 - 3b_3 \implies b_2 = -2b_4 + 3b_3& \\
+         0 = b_1 - 3b_4 + b_3 \implies b_1 = 3b_4 - b_3&
+    \end{array} \right.
+\end{align*}
+Logo, temos que, para que o sistema $AX = B$ tenha solução, a matriz $B$ deve ser formada por:
+\begin{displaymath}
+    B = \left[\begin{array}{c}
+         3b_4 - b_3 \\
+         -2b_4 + 3b_3 \\
+         b_3 \\
+         b_4
+    \end{array}\right],
+\end{displaymath}
+onde $b_3, b_4 \in \mathbb{R}$.
