@@ -25,12 +25,19 @@ Mostre que $f$ é bijetiva.} \\
         n_3 = n_4
     \end{align*}
     \item Se um elemento é ímpar e outro par: \\
-    Sejam $n_5, n_6 \in \N^*$, onde $n_5$ é ímpar e $n_6$ é par. Com $n_5 \ne n_6$, temos: 
+    Sejam $n_5, n_6 \in \N^*$, onde $n_5$ é ímpar e $n_6$ é par. Temos:
     \begin{align*}
-        n_5 \ne n_6 &\implies f(n_5) \ne f(n_6) \\ &\implies
-        \frac{n_5 - 1}{2} \ne \frac{-n_6}{2} \\ &\implies
-        n_5 - 1 \ne -n_6
+        n_5 > 0 & \implies -n_5 < 0 \\ & \implies
+        \frac{-n}{5} < 0 \\ & \implies
+        f(n_5) < 0
     \end{align*}
+    Temos também que:
+    \begin{align*}
+        n_6 \ge 1 & \implies n_6 - 1 \ge 0 \\ & \implies
+        \frac{n_6 - 1}{2} \ge 0 \\ & \implies
+        f(n_6) \ge 0
+    \end{align*}
+    Dessa forma, temos que $n_5 \ne n_6 \implies f(n_5) \ne f(n_6)$. Logo, a função é injetiva para todos os casos.
 \end{itemize}
 Assim, está provada a injetividade da função $f$. Vejamos a sobrejetividade:
 \begin{itemize}
