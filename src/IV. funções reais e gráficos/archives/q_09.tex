@@ -1,0 +1,92 @@
+\enquote{Considere as funções reais $f: X \rightarrow Y, g: Y \rightarrow Z$. Demonstre ou refute com contraexemplos as afirmações abaixo:}
+    \begin{enumerate}
+    \item \enquote{Se $f$ e $g$ são injetivas, então ($g \circ f$) é injetiva;} 
+    \\ \emph{Resolução.} Temos que ($g \circ f$) é definida tal que
+    \begin{displaymath}
+        g \circ f: X \rightarrow Z 
+    \end{displaymath}
+    Se $f$ é injetiva e $g$ também, tomando $a, b \in X \text{ e } x, y \in Y$ temos:
+    \begin{align*}
+        (g \circ f)(a) = (g \circ f)(b) & \implies
+        g(f(a)) = g(f(b)) \\ & \implies
+        g(x) = g(y) \\ & \implies
+        x = y
+    \end{align*}
+    Portanto, ($g \circ f$) é de fato injetiva e a afirmação é verdadeira.
+    \item \enquote{Se $(g \circ f)$ é injetiva, então $f$ e $g$ são injetivas.} 
+    \\ \emph{Resolução.} Sejam as funções
+    \begin{align*}
+        f&: \mathbb{N}^* \rightarrow \mathbb{N}\\
+        x &\rightarrow \left\{\begin{array}{c}
+            x, \text{ se $x$ é ímpar}\\
+            \frac{x}{2}, \text{ se $x$ é par}
+        \end{array}\right.,
+    \end{align*}
+    \begin{align*}
+        g: \mathbb{N} &\rightarrow \mathbb{N} \\
+        y &\rightarrow 2y,
+    \end{align*}
+    \begin{align*}
+        g \circ f: \mathbb{N}^* &\rightarrow \mathbb{N} \\
+        x \rightarrow y& \rightarrow 2y
+    \end{align*}
+    Note, portanto, os seguintes casos:
+    \begin{itemize}
+        \item Se $x_1, x_2$ são ímpares:
+        \begin{align*}
+            g(f(x_1)) = g(f(x_2)) & \implies
+            g(x_1) = g(x_2) \\ & \implies
+            2x_1 = 2x_2 \\ & \implies
+            x_1 = x_2
+        \end{align*}    
+        \item Se $x_1, x_2$ são pares:
+        \begin{align*}
+            g(f(x_1)) = g(f(x_1)) & \implies
+            g(\frac{x_1}{2}) = g(\frac{x_2}{2}) \\ & \implies 
+            x_1 = x_2
+        \end{align*}
+        \item Se um elemento é ímpar e outro é par: \\
+        \textbf{Aguardando validação.}
+        % Note que $x_1$, ímpar, é diferente de $x_2$, par. Temos:
+        % \begin{align*}
+        %     (g \circ f)(x_1) = (g \circ f)(x_2) & \implies g(f(x_1)) = g(f(x_2)) \\ & \implies
+        %     g(x_1) = g(\frac{x_2}{2}) \\ & \implies
+        %     2x_1 = x_2 
+        % \end{align*}
+        % Chegamos em um absurdo. Logo, se $x_1$ e $x_2$, então geram imagens diferentes.
+    \end{itemize}
+    Está provada, portanto, que a função composta $(g \circ f)$ é injetiva. Contudo, note que a função $f$ não é, pois
+    \begin{displaymath}
+        f(1) = 1 = f(2)
+    \end{displaymath}
+    Logo, a afirmação é falsa.
+    \item \enquote{Se $f$ e $g$ são sobrejetivas, então $(g\circ f)$ é sobrejetiva.}
+    \\ \emph{Resolução}. Temos que ($g \circ f$) é definida tal que
+    \begin{displaymath}
+        g \circ f: X \rightarrow Z 
+    \end{displaymath}
+    Desse modo, se $f$ e $g$ são sobrejetivas, e tomando $x \in X, y \in Y$ e $z \in Z$, temos
+    \begin{displaymath}
+        (g\circ f)(x) = g(f(x)) = g(y) = z
+    \end{displaymath}
+    Logo, $(g \circ f)$ é sobrejetiva e a afirmação é verdadeira.
+    \item \enquote{Se $(g \circ f)$ é sobrejetiva, então $f \text{ e } g$ são sobrejetivas.}
+    \\ \emph{Resolução.} Sejam as funções
+    \begin{align*}
+        f: \mathbb{R} &\rightarrow \mathbb{R}^*_+ \\
+        x &\rightarrow x^2
+    \end{align*}
+    \begin{align*}
+        g: \mathbb{R}^*_+ &\rightarrow \mathbb{R}_+ \\
+        y &\rightarrow \sqrt{y},
+    \end{align*}
+    \begin{align*}
+        g \circ f: \mathbb{R} &\rightarrow \mathbb{R}_+ \\
+        x \rightarrow &\sqrt{x^2} \rightarrow y
+    \end{align*}
+    Tomando $y \in \mathbb{R}_+$, temos que existe $x \in \mathbb{R}$ tal que 
+    \begin{displaymath}
+        g(f(x)) = g(x^2) = y 
+    \end{displaymath}
+    Logo, a função $(g \circ f)$ é sobrejetiva. Note, contudo, que $g$ não é sobrejetiva pois, tomando $0 \in \mathbb{R}_+$, não há nenhum elemento de $\mathbb{R}^*_+$ que resulte nele.
+\end{enumerate}
