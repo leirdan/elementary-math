@@ -1,1 +1,144 @@
-Fiz, mas falta colocar.
+\enquote{Considere a função $g: [0; 5] \rightarrow \mathbb{R}$ definida por:}
+        \begin{align*}
+            g(x) = \left\{
+                \begin{aligned}
+                    4x - x^2 &; \quad x < 3 \\
+                    x - 2 &; \quad x \ge 3
+                \end{aligned}
+                \right.
+        \end{align*}
+        \enquote{Determine as soluções de:}
+        \begin{enumerate}
+            \item $g(x) = -1$;
+            \begin{enumerate}
+                \item Se $x < 3$: \\ 
+                    Temos $4x - x^2 = -1 \implies 4x - x^2 + 1 = 0$. Aplicando lei de Bhaskara, temos:
+                    \begin{align*}
+                        x &= \frac{-4 \pm \sqrt{4^2 - (-4)}}{-2} \\ \implies 
+                        x &= \frac{-4 \pm \sqrt{20}}{-2} \\ \implies
+                        x &= \frac{-4 \pm 2\sqrt{5}}{-2}
+                    \end{align*}
+                    Portanto, tomando $x_1, x_2 \in \mathbb{R}$, temos as possibilidades:
+                    \begin{align*}
+                        &x_1 = \frac{-4 + 2\sqrt{5}}{-2} \implies 2 - \sqrt{5} \\ 
+                        &x_2 = \frac{-4 -2\sqrt{5}}{-2} \implies 2 + \sqrt{5}   
+                    \end{align*}
+                    Como $x_2 < 3$ e $x_1 \notin [0; 5]$, temos que não há conjunto solução para este caso. 
+                \item Se $x \ge 3$: \\
+                    Temos \begin{displaymath}
+                        x - 2 = -1 \implies x - 1 = 0 \implies x = 1.
+                    \end{displaymath}
+                    Temos que $x$ não é maior ou igual a três. Logo, não há solução para quando $g(x) = -1$.
+                \end{enumerate}
+            \item $g(x) = 0$;
+            \begin{enumerate}
+                \item Se $x < 3$: \\
+                    Temos:
+                    \begin{displaymath}
+                        4x - x^2 = 0
+                    \end{displaymath}
+                    Aplicando lei de Bhaskara, temos:
+                    \begin{align*}
+                        x &= \frac{(-4) \pm \sqrt{16 - 0}}{-2} \\ \implies
+                        x &= \frac{(-4) \pm 4}{-2}
+                    \end{align*}
+                    Tomando $x_1, x_2 \in \mathbb{R}$, temos as seguintes possibilidades:
+                    \begin{align*}
+                        &x_1 = \frac{(-4) - 4}{-2} \implies x_1 = 4 \\  
+                        &x_2 = \frac{(-4) + 4}{-2} \implies x_2 = 0
+                    \end{align*}
+                    Temos que $x_1 > 3$, logo não é solução. Então, seja $S_1$ o seguinte conjunto solução:
+                    \begin{align*}
+                        S_1 &= \{0\} \cap ]-\infty; 3[ \cap  [0; 5] = 0
+                    \end{align*}
+                \item Se $x \ge 3$: \\
+                    Temos: 
+                    \begin{displaymath}
+                        x - 2 = 0 \implies x = 2
+                    \end{displaymath}
+                    Temos que $x$ não é maior ou igual a 3. Portanto a solução para $g(x) = 0$ é somente 0.
+            \end{enumerate}
+        \item $g(x) = 3$;
+            \begin{enumerate}
+            \item Se $x < 3$: \\
+                Temos:
+                \begin{displaymath}
+                    4x - x^2 = 3 \implies 4x - x^2 - 3 = 0 
+                \end{displaymath}
+                Aplicando lei de Bhaskara, temos:
+                \begin{align*}
+                    x &= \frac{-4 \pm \sqrt{16 - (-12)}}{-2} \\ \implies
+                    x &= \frac{-4 \pm 2\sqrt{7}}{-2}
+                \end{align*}
+                Tomemos as possibilidades $x_1, x_2 \in \mathbb{R}$:
+                \begin{align*}
+                    x_1 &= \frac{-4 + 2\sqrt{7}}{-2} \implies x_1 = 2 - \sqrt{7} ; \\ 
+                    x_2 &= \frac{-4 - 2\sqrt{7}}{-2} \implies x_2 = 2 + \sqrt{7}
+                \end{align*}
+                Temos que $x_1 \notin [0;5]$ e $x_2$ não é menor que 3. Logo, não há solução para este caso.
+            \item Se $x \ge 3$: \\
+                Temos:
+                \begin{displaymath}
+                    x - 2 = 3 \implies x = 5
+                \end{displaymath}
+                Seja $S$, então, o seguinte conjunto solução:
+                \begin{displaymath}
+                    S = 5 \cap [3; \infty[ \cap [0; 5] = 5
+                \end{displaymath}
+                Portanto, a única solução para quando $g(x) = 3$ é 5.
+            \end{enumerate}
+        \item Se $g(x) = 4$:
+        \begin{enumerate}
+            \item Caso $x < 3$: \\
+                Temos:
+                \begin{displaymath}
+                    4x - x^2 = 4 \implies 4x - x^2 - 4 = 0
+                \end{displaymath}
+                Aplicando lei de Bhaskara, temos:
+                \begin{align*}
+                    x &= \frac{-4 \pm \sqrt{16 - 16}}{-2} \\ \implies
+                    x &= \frac{-4 \pm 0}{-2} \\ \implies 
+                    x &= 2
+                \end{align*}
+                Temos o conjunto solução $S_1$ tal que:
+                \begin{displaymath}
+                    S_1 = 2 \cap ]-\infty; 3[ \cap [0; 5] = 2
+                \end{displaymath}
+            \item Caso $x \ge 3$: \\
+                Temos:
+                \begin{displaymath}
+                    x - 2 = 4 \implies x = 6
+                \end{displaymath}
+                Temos $S_2$ como o seguinte conjunto solução:
+                \begin{displaymath}
+                    S_2 = 6 \cap [3; \infty[ \cap [0; 5] = \emptyset
+                \end{displaymath}
+                Portanto, temos que a única solução para $g(x) = 4$ é 2.
+            \end{enumerate}
+        \item Se $g(x) < 3$:
+        \begin{enumerate}
+            \item Caso $x < 3$: \\
+            \textbf{Em desenvolvimento.}
+            % Temos:
+            % \begin{displaymath}
+            %     4x - x^2 < 3 \implies (x - 4)\cdot(-x + 0) < 3
+            % \end{displaymath}
+            % Conforme estudo do sinal temos que o conjunto-solução para este caso é: CORRIGIRRRRR
+            % \begin{displaymath}
+            %     S_1 = ]0; 7[ \cap ]-\infty; 3[ \cap [0; 5] = ]0; 3[
+            % \end{displaymath}
+            \item Caso $x \ge 3$: \\
+            Temos: 
+            \begin{displaymath}
+                x - 2 \ge 3 \implies x \ge 5
+            \end{displaymath}
+            Temos o seguinte conjunto-solução para este caso:
+            \begin{displaymath}
+                S_2 = [5; \infty[ \cap [3; \infty[ \cap [0; 5] = 5
+            \end{displaymath}
+            Temos, portanto, que as soluções para $g(x) < 3$ são
+            \begin{displaymath}
+                \text{\textbf{Em desenvolvimento.}}
+            \end{displaymath}
+        \end{enumerate}
+    \end{enumerate}
