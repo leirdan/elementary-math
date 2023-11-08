@@ -1,1 +1,57 @@
-Fiz, mas falta colocar.
+\enquote{Seja $f: \R \rightarrow \R$ a função cuja lei de associação é da forma abaixo:
+    \begin{displaymath}
+        f(x) = \left\{\begin{aligned}
+            x^2 + 3x&; \quad \text{se $x \ge 0$} \\
+            \frac{3}{2}x&; \quad \text{se $x < 0$}
+        \end{aligned}\\ 
+        \right.
+    \end{displaymath}
+Mostre que $f$ é bijetiva.} \\
+\emph{Resolução.} Provemos que é injetiva.
+\begin{itemize}
+    \item Se $a, b \ge 0$; \\
+    Sejam $a, b \in \R$. Temos que:
+    \begin{align*}
+        f(a) = f(b) & \implies
+        a^2 + 3a = b^2 + 3b \\ & \implies
+        a^2 + 3a + (\frac{3}{2})^2 = b^2 + 3b + (\frac{3}{2})^2 \\ & \implies
+        (a + \frac{3}{2})^2 = (b + \frac{3}{2})^2 \\ & \implies 
+        \sqrt{(a + \frac{3}{2})^2} = \sqrt{(b + \frac{3}{2})^2} \\ & \implies
+        a + \frac{3}{2} = b + \frac{3}{2} \\ & \implies
+        a = b
+    \end{align*}
+    \item Se $a, b < 0$; \\
+    Sejam $a, b \in \R$. Temos que:
+    \begin{align*}
+        f(a) = f(b) & \implies \frac{3}{2}a = \frac{3}{2}b \\ & \implies
+        \frac{2}{3} \cdot \frac{3}{2}a = \frac{2}{3} \cdot \frac{3}{2}b \\ & \implies
+        a = b
+    \end{align*}
+    \item Se $a \ge 0$ e $b < 0$; \\
+    Sejam $a, b \in \R$. Temos:
+    \begin{align*}
+        a \ge 0 & \implies a + \frac{3}{2} \ge \frac{3}{2} \\ & \implies
+        (a + \frac{3}{2})^2 \ge (\frac{3}{2})^2 \\ & \implies
+        a^2 + 3a + \frac{9}{4} \ge \frac{9}{4} \\ & \implies
+        a^2 + 3a \ge 0 \\ & \implies
+        f(a) \ge 0
+    \end{align*}
+    Também temos que:
+    \begin{align*}
+        b < 0 & \implies \frac{3}{2}b < 0 \\ & \implies
+        f(b) < 0
+    \end{align*}
+    Assim, $a \ne b \implies f(a) \ne f(b)$. Logo, a função é injetiva para todos os casos.
+\end{itemize}
+Provemos agora que é sobrejetiva.
+\textbf{Em desenvolvimento.}
+% \begin{itemize}
+%     \item Se $x \ge 0$; \\
+%     Seja $y \in \R$. Logo existe um número $\frac{3}{2}\sqrt{y} - \frac{3}{2} \in \R$ tal que
+%     \begin{align*}
+%         f(\frac{3}{2}\sqrt{y} - \frac{3}{2}) &= (\frac{3}{2}\sqrt{y} - \frac{3}{2})^2 + 3 \cdot (\frac{3}{2}\sqrt{y} - \frac{3}{2}) \\ &=
+%         \frac{9}{4}y - 2\cdot \frac{3}{2}\sqrt{y} \cdot (-\frac{3}{2}) + \frac{9}{4} + \frac{9}{2}\sqrt{y} - \frac{9}{2} \\ &=
+%         \frac{9}{4}y - (-\frac{9}{2}\sqrt{y}) + \frac{9}{4} + \frac{9}{2}\sqrt{y} - \frac{9}{2} \\ & =
+%         \frac{9}{4}y + \frac{9}{2}\sqrt{y} -\frac{9}{4} + \frac{9}{2}\sqrt{y}
+%     \end{align*}
+% \end{itemize}
