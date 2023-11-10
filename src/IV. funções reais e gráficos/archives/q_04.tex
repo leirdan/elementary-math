@@ -1,13 +1,11 @@
 \enquote{Considere a função $f: \R^* \rightarrow \R^*_+$ tal que $f(x) = \dfrac{1}{1 + x^2}$. Responda as seguintes perguntas apresentando as respectivas justificativas:}
 \begin{enumerate}
     \item \enquote{$f$ é injetiva}? \\
-    \textbf{Não}. Tomando $1, -1$, temos:
-    \begin{align*}
-        1 \ne -1 &\implies f(1) \ne f(-1) \\ &\implies 
-        \frac{1}{1 + 1^2} \ne \frac{1}{1 + (-1)^2} \\ &\implies
-        \frac{1}{2} \ne \frac{1}{2}
-    \end{align*}
-    Contudo, tal conclusão é um absurdo e mostra que dois elementos diferentes podem gerar a mesma imagem. Portanto, a função $f$ não é injetiva.
+    \textbf{Não}. Note que, tomando $1, -1 \in \R^*$, temos
+    \begin{displaymath}
+        f(-1) = \frac{1}{2} = f(1)
+    \end{displaymath}
+    Logo, a função $f$ não é injetiva.
     \item \enquote{$f$ é sobrejetiva}? \\
     \textbf{Não}. Note que, sendo $1 \in \R^*_+$:
     \begin{align*}
