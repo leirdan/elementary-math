@@ -44,14 +44,19 @@ Mostre que $f$ é bijetiva.} \\
     Assim, $a \ne b \implies f(a) \ne f(b)$. Logo, a função é injetiva para todos os casos.
 \end{itemize}
 Provemos agora que é sobrejetiva.
-\textbf{Em desenvolvimento.}
-% \begin{itemize}
-%     \item Se $x \ge 0$; \\
-%     Seja $y \in \R$. Logo existe um número $\frac{3}{2}\sqrt{y} - \frac{3}{2} \in \R$ tal que
-%     \begin{align*}
-%         f(\frac{3}{2}\sqrt{y} - \frac{3}{2}) &= (\frac{3}{2}\sqrt{y} - \frac{3}{2})^2 + 3 \cdot (\frac{3}{2}\sqrt{y} - \frac{3}{2}) \\ &=
-%         \frac{9}{4}y - 2\cdot \frac{3}{2}\sqrt{y} \cdot (-\frac{3}{2}) + \frac{9}{4} + \frac{9}{2}\sqrt{y} - \frac{9}{2} \\ &=
-%         \frac{9}{4}y - (-\frac{9}{2}\sqrt{y}) + \frac{9}{4} + \frac{9}{2}\sqrt{y} - \frac{9}{2} \\ & =
-%         \frac{9}{4}y + \frac{9}{2}\sqrt{y} -\frac{9}{4} + \frac{9}{2}\sqrt{y}
-%     \end{align*}
-% \end{itemize}
+\begin{itemize}
+    \item Se $x \ge 0$; \\
+    Seja $y \in \R$. Logo, existe um número $\sqrt{y + \frac{9}{4}} - \frac{3}{2}$ tal que
+    \begin{align*}
+        f(\sqrt{y + \frac{9}{4}} - \frac{3}{2}) & = (\sqrt{y + \frac{9}{4}} - \frac{3}{2})^2 + 3 \cdot (\sqrt{y + \frac{9}{4}} - \frac{3}{2}) \\ & =
+        y + \frac{9}{4} - 3 \cdot \sqrt{y + \frac{9}{4}} + \frac{9}{4} + 3\sqrt{y + \frac{9}{4}} - \frac{9}{2} \\ & =
+        y + \frac{18}{4} - \frac{9}{2} \\ & =
+        y
+    \end{align*}
+    \item Se $x < 0$; \\
+    Seja $y \in \R$. Logo, existe um número $\frac{2}{3}y$ tal que
+    \begin{align*}
+        f(\frac{2}{3}y) & = \frac{3}{2}x \\ &= \frac{3}{2} \cdot \frac{2}{3}y \\ & = y
+    \end{align*}
+\end{itemize}
+Logo, está provada a sobrejetividade para ambos os casos de $f$.
