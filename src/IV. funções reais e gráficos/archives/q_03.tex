@@ -13,45 +13,55 @@ Mostre que $f$ é bijetiva.} \\
     \item Se $n$ é par: \\
     Sejam $n_1, n_2 \in \N^*$ e ambos pares. Temos:
     \begin{align*}
-        f(n_1) = f(n_2) &\implies \frac{-n_1}{2} = \frac{-n_2}{2} \quad &(\cdot 2) \\ &\implies
-        (-n_1) = (-n_2) \quad &(\cdot-1) \\ &\implies
+        f(n_1) = f(n_2) &\implies \frac{-n_1}{2} = \frac{-n_2}{2} \\ &\implies
+        (-n_1) = (-n_2) \\ &\implies
         n_1 = n_2
     \end{align*}
     \item Se $n$ é ímpar: \\
-    Sejam $n_3, n_4 \in \N^*$ e ambos ímpares. Temos:
+    Sejam $n_1, n_2 \in \N^*$ e ambos ímpares. Temos:
     \begin{align*}
-        f(n_3) = f(n_4) &\implies \frac{n_3 - 1}{2} = \frac{n_4 - 1}{2} \quad &(\cdot 2) \\ &\implies
-        n_3 - 1 = n_4 - 1 \quad &(+1) \\ &\implies 
-        n_3 = n_4
+        f(n_1) = f(n_2) &\implies \frac{n_1 - 1}{2} = \frac{n_2 - 1}{2} \\ &\implies
+        n_1 - 1 = n_2 - 1 \\ &\implies 
+        n_1 = n_2
     \end{align*}
     \item Se um elemento é ímpar e outro par: \\
-    Sejam $n_5, n_6 \in \N^*$, onde $n_5$ é ímpar e $n_6$ é par. Temos:
+    Sejam $n_1, n_2 \in \N^*$, onde $n_1$ é ímpar e $n_2$ é par. Temos:
     \begin{align*}
-        n_5 > 0 & \implies -n_5 < 0 \\ & \implies
-        \frac{-n}{5} < 0 \\ & \implies
-        f(n_5) < 0
+        n_1 > 0 & \implies -n_1 < 0 \\ & \implies
+        \frac{-n}{2} < 0 \\ & \implies
+        f(n_1) < 0
     \end{align*}
     Temos também que:
     \begin{align*}
-        n_6 \ge 1 & \implies n_6 - 1 \ge 0 \\ & \implies
-        \frac{n_6 - 1}{2} \ge 0 \\ & \implies
-        f(n_6) \ge 0
+        n_2 \ge 1 & \implies n_2 - 1 \ge 0 \\ & \implies
+        \frac{n_2 - 1}{2} \ge 0 \\ & \implies
+        f(n_2) \ge 0
     \end{align*}
-    Dessa forma, temos que $n_5 \ne n_6 \implies f(n_5) \ne f(n_6)$. Logo, a função é injetiva para todos os casos.
+    Dessa forma $n_1 \ne n_2 \implies f(n_1) \ne f(n_2)$.
 \end{itemize}
 Assim, está provada a injetividade da função $f$. Vejamos a sobrejetividade:
 \begin{itemize}
     \item Se $n$ é par: \\
-    Note que, quando executada sobre os números pares, a função $f$ gera um inteiro negativo. \\
-    Logo, seja $y \in \N^*, (-2y) \in \Z_-$, tal que $y$ é par. Portanto, ao aplicar a função sobre $(-2y)$:
-    \begin{displaymath}
+    Note que quando executada sobre os números pares a função $f$ gera um inteiro negativo. \\
+    Seja $y \in \Z_-^*$. Note que:
+    \begin{align*}
+        y < 0 & \implies 2y < 0 \\ & \implies
+        -2y > 0
+    \end{align*}
+    Logo, existe um número $-2y \in N^*$ tal que
+    \begin{align*}
         f(-2y) = \frac{-(-2y)}{2} = y
-    \end{displaymath}
+    \end{align*}
     \item Se $n$ é ímpar: \\
     Note que executando a função $f$ sobre os números impares naturais, temos somente números inteiros não-negativos. \\
-    Logo, seja $z \in \N^*$ e $(2z + 1) \in \Z_+$, tal que $z$ é ímpar. Assim, temos:
-    \begin{displaymath}
-        f(2z + 1) = \frac{(2z + 1) - 1}{2} = z
-    \end{displaymath}
+    Seja $y \in \Z_+$. Note que:
+    \begin{align*}
+        y \ge 0 & \implies 2y \ge 0 \\ & \implies
+        2y + 1 \ge 1
+    \end{align*}
+    Logo, existe um número $2y + 1 \in \N^*$ tal que
+    \begin{align*}
+        f(2y + 1) = \frac{2y + 1 - 1}{2} = y
+    \end{align*}
 \end{itemize}
 Portanto, está provada a sobrejetividade para ambos os casos de $n$. Consequentemente também está provada a bijetividade de $f$.
