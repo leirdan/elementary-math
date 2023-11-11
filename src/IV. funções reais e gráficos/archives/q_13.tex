@@ -1,0 +1,26 @@
+\enquote{Considere a função $f: \R_- \rightarrow \R_+^*$ tal que $f(x) = \frac{1}{1 + x^2}$. Responda as seguintes perguntas apresentando as respectivas justificativas.}
+\begin{enumerate}
+    \item \enquote{$f$ é monótona? Se sim, de que tipo? Se não, $f$ possui algum intervalo de monotonicidade?} \\
+    \emph{Resolução.} Sim, é monótona crescente pois, tomados quaisquer $a, b \in \R_-$, temos
+    \begin{align*}
+        a < b \le 0 & \implies a^2 > b^2 \ge 0 \\ & \implies
+        1 + a^2 > 1 + b^2 > 1 \ge 0 \\ & \implies
+        \frac{1}{1 + a^2} < \frac{1}{1 + b^2} \\ & \implies
+        f(a) < f(b)
+    \end{align*}
+    A função é, portanto, crescente.
+    \item \enquote{$f$ possui máximo absoluto?} \\
+    \emph{Resolução.} Seja $x \in \R_-$, ou seja, $x \le 0$. Logo, como a função é crescente, temos que para quaisquer $x$:
+    \begin{align*}
+        f(x) \le f(0)
+    \end{align*}
+    Então a função possui um máximo absoluto $x_0$ tal que $x_0 = 0$. 
+    \item \enquote{$f$ possui mínimo absoluto?} \\
+    \emph{Resolução.} Sejam $x_0, x \in \R_-$. Suponha, por absurdo, que $x$ é o ponto mínimo de $f$; então, $f(x_0) \le f(x)$ para todo $x \in \R_-$. \\ Note, contudo, que temos $x_1 \in \R_-$ tal que $x_1 < x_0$. Desse modo, como a função é crescente, temos que
+    \begin{displaymath}
+        f(x_1) \le f(x_0),
+    \end{displaymath}
+    o que contradiz $x_0$ ser o mínimo absoluto. Logo, a função não tem mínimo absoluto.
+    \item \enquote{$f$ é limitada?} \\
+    \emph{Resolução.} Sim. $f$ é limitada superiormente pelo fato de ter um máximo absoluto; e também é limitada inferiormente pois, para qualquer $x$, temos $f(x) \ge 0$.
+\end{enumerate}

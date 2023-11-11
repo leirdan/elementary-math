@@ -1,0 +1,26 @@
+\enquote{Considere a função real $f$ tal que $f(x) = -x^2 + 2x + 8$.}
+\begin{enumerate}
+    \item \enquote{Mostre que $f$ é crescente no intervalo $]-\infty; 1]$;} \\
+    \emph{Resolução.} Sejam $a, b \in ]-\infty; 1]$ tal que $a < b$. Temos:
+    \begin{align*}
+        a < b \le 1 & \implies a - 1 < b - 1 \le 0 \\ & \implies
+        (a - 1)^2 > (b - 1)^2 \ge 0 \\ & \implies
+        a^2 - 2a + 1 > b^2 - 2b + 1 \\ & \implies
+        -a^2 + 2a - 1 < -b^2 + 2b - 1 \\ & \implies
+        -a^2 + 2a + 8 < -b^2 + 2b + 8 \\ & \implies
+        f(a) < f(b)
+    \end{align*}
+    Logo, está mostrada que a função é crescente no intervalo citado.
+    \item \enquote{Mostre que $f$ é decrescente no intervalo $[1; \infty[$;} \\
+    \emph{Resolução.} Sejam $a, b \in [1; \infty[$ tal que $a < b$. Temos:
+    \begin{align*}
+        a < b \ge 1 & \implies a - 1 < b - 1 \ge 0 \\ & \implies
+        (a - 1)^2 < (b - 1)^2 \\ & \implies
+        a^2 - 2a + 1 < b^2 - 2b + 1 \\ & \implies
+        -a^2 + 2a - 1 > b^2 + 2b - 1 \\ & \implies
+        f(a) > f(b)
+    \end{align*}
+    Logo, está mostrada que a função é decrescente no intervalo citado.
+    \item \enquote{Use os itens anteriores para concluir que $1 \in \R$ é um ponto de máximo absoluto de $f$.} \\
+    \emph{Resolução.} Temos que 1 é o ponto máximo absoluto de $f$ visto que ele é o maior valor do trecho crescente de $f$ e, simultaneamente, o maior valor do trecho decrescente de $f$.
+\end{enumerate}
