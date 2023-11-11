@@ -17,7 +17,8 @@ Mostre que $f$ é bijetiva.} \\
         a^2 + 3a + (\frac{3}{2})^2 = b^2 + 3b + (\frac{3}{2})^2 \\ & \implies
         (a + \frac{3}{2})^2 = (b + \frac{3}{2})^2 \\ & \implies 
         \sqrt{(a + \frac{3}{2})^2} = \sqrt{(b + \frac{3}{2})^2} \\ & \implies
-        a + \frac{3}{2} = b + \frac{3}{2} \\ & \implies
+        |a + \frac{3}{2}| = |b + \frac{3}{2}| \\ & \implies
+        a + \frac{3}{2} = b + \frac{3}{2} \quad (a, b \ge 0) \\ & \implies
         a = b
     \end{align*}
     \item Se $a, b < 0$; \\
@@ -41,22 +42,34 @@ Mostre que $f$ é bijetiva.} \\
         b < 0 & \implies \frac{3}{2}b < 0 \\ & \implies
         f(b) < 0
     \end{align*}
-    Assim, $a \ne b \implies f(a) \ne f(b)$. Logo, a função é injetiva para todos os casos.
+    Assim, $a \ne b \implies f(a) \ne f(b)$.
 \end{itemize}
-Provemos agora que é sobrejetiva.
+Logo, a função é injetiva para todos os casos. Provemos agora que é sobrejetiva.
 \begin{itemize}
     \item Se $x \ge 0$; \\
-    Seja $y \in \R$. Logo, existe um número $\sqrt{y + \frac{9}{4}} - \frac{3}{2}$ tal que
+    Seja $y \in \R_+$, ou seja:
+    \begin{align*}
+        y \ge 0 & \implies y + \frac{9}{4} \ge \frac{9}{4} \\ & \implies
+        \sqrt{y + \frac{9}{4}} \ge \frac{3}{2} \\ & \implies 
+        \sqrt{y + \frac{9}{4}} - \frac{3}{2} \ge 0
+    \end{align*} 
+    Logo, existe um número $\sqrt{y + \frac{9}{4}} - \frac{3}{2} \in \R$ tal que
     \begin{align*}
         f(\sqrt{y + \frac{9}{4}} - \frac{3}{2}) & = (\sqrt{y + \frac{9}{4}} - \frac{3}{2})^2 + 3 \cdot (\sqrt{y + \frac{9}{4}} - \frac{3}{2}) \\ & =
         y + \frac{9}{4} - 3 \cdot \sqrt{y + \frac{9}{4}} + \frac{9}{4} + 3\sqrt{y + \frac{9}{4}} - \frac{9}{2} \\ & =
         y + \frac{18}{4} - \frac{9}{2} \\ & =
         y
-    \end{align*}
+    \end{align*}  
+    Portanto, a função é sobrejetiva para quaisquer $x \in \R_+$.  
     \item Se $x < 0$; \\
-    Seja $y \in \R$. Logo, existe um número $\frac{2}{3}y$ tal que
+    Seja $y \in \R_-^*$. Note que:
+    \begin{align*}
+        y < 0 & \implies \frac{2}{3}y < 0
+    \end{align*}
+    Logo, existe um número $\frac{2}{3}y \in \R_-^*$ tal que
     \begin{align*}
         f(\frac{2}{3}y) & = \frac{3}{2}x \\ &= \frac{3}{2} \cdot \frac{2}{3}y \\ & = y
     \end{align*}
+    A função é, portanto, sobrejetiva para quaisquer $x \in \R_-^*$.
 \end{itemize}
-Logo, está provada a sobrejetividade para ambos os casos de $f$.
+Como $f$ é sobrejetiva para ambos os casos temos que a função é, de fato, sobrejetiva para qualquer $x \in \R$.

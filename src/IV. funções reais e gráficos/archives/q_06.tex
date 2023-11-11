@@ -1,1 +1,100 @@
-Fiz, mas falta colocar.
+\enquote{Considere a função $f: ]0; 1[ \rightarrow \R$ tal que
+\begin{displaymath}
+    f(x) = \left\{\begin{aligned}
+        \frac{1}{x} - 2&; \quad \text{se $x \le \frac{1}{2}$} \\
+        2 - \frac{1}{1 - x}&; \quad \text{se $x > \frac{1}{2}$}
+    \end{aligned}\\ 
+    \right.
+\end{displaymath}
+Mostre que $f$ é bijetiva.} \\
+
+\emph{Resolução.} Provemos sua injetividade para cada caso:
+\begin{itemize}
+    \item Se $x \le \frac{1}{2}$; \\
+    Sejam $a, b \in ]0; 1[$ tal que
+    \begin{align*}
+        f(a) = f(b) & \implies \frac{1}{a} - 2 = \frac{1}{b} -2 \\ & \implies
+        \frac{1}{a} = \frac{1}{b} \\ & \implies
+        a = b
+    \end{align*}
+    \item Se $x > \frac{1}{2}$; \\
+    Sejam $a, b \in ]0; 1[$ tal que 
+    \begin{align*}
+        f(a) = f(b) & \implies 2 - \frac{1}{1 - a} = 2 - \frac{1}{1 - b} \\ & \implies
+        - \frac{1}{1 - a} = - \frac{1}{1 - b} \\ & \implies
+        \frac{1}{1 - a} = \frac{1}{1 - b} \\ & \implies
+        1 - a = 1 - b \\ & \implies
+        a = b
+    \end{align*}
+    \item Se $x_1 \le \frac{1}{2}$ e $x_2 > \frac{1}{2}$; \\
+    Sejam $a, b$ tais que:
+    \begin{align*}
+        0 < a \le \frac{1}{2} & \implies \frac{1}{a} \ge \frac{1}{\frac{1}{2}} \\ & \implies
+        \frac{1}{a} \ge 2 \\ & \implies
+        \frac{1}{a} - 2 \ge 0 \\ & \implies
+        f(a) \ge 0
+    \end{align*}
+    e
+    \begin{align*}
+        1 > b > \frac{1}{2} & \implies 0 > b - 1 > -\frac{1}{2} \\ & \implies
+        1 - b < \frac{1}{2} \\ & \implies
+        \frac{1}{1 - b} > 2 \\ & \implies
+        -\frac{1}{1 - b} < -2 \\ & \implies
+        2 - \frac{1}{1 - b} < 0 \\ & \implies
+        f(b) < 0
+    \end{align*}
+    Assim, $a \ne b \implies f(a) \ne f(b)$.
+\end{itemize}
+Provada sua injetividade, provemos também sua sobrejetividade.
+\begin{itemize}
+    \item Se $x \le \frac{1}{2}$; \\
+    Seja $y \in \R_+$. Note que:
+    \begin{align*}
+        y \ge 0 & \implies y + 2 \ge 0 \\ & \implies
+        \frac{1}{y + 2} \le \frac{1}{2}
+    \end{align*}
+    e 
+    \begin{align*}
+        1 > 0 & \implies \frac{1}{y + 2} > 0
+    \end{align*}
+    Portanto, 
+    \begin{displaymath} 
+        0 < \frac{1}{y + 2} \le \frac{1}{2}
+    \end{displaymath}
+    Logo, existe um número $\frac{1}{y + 2} \in ]0; 1[$ tal que
+    \begin{align*}
+        f(\frac{1}{y + 2}) & = \frac{1}{\frac{1}{y + 2}} - 2 \\ & =
+        y + 2 - 2 \\ & =
+        y
+    \end{align*}
+    Temos que a função é sobrejetiva para $x \le \frac{1}{2}$.
+    \item Se $x > \frac{1}{2}$; \\
+    Seja $y \in \R_-^*$. Note que:
+    \begin{align*}
+        y < 0 & \implies -y > 0 \\ & \implies
+        -y + 2 > 2 \\ & \implies
+        \frac{1}{-y + 2} < \frac{1}{2} \\ & \implies
+        -\frac{1}{-y + 2} > -\frac{1}{2} \\ & \implies
+        1 - \frac{1}{-y + 2} > \frac{1}{2} 
+    \end{align*}
+    e
+    \begin{align*}
+        1 > 0 & \implies
+        \frac{1}{-y + 2} > 0 \\ & \implies
+        -\frac{1}{-y + 2} < 0 \\ & \implies
+        1 - \frac{1}{-y + 2} < 1
+    \end{align*}
+    Portanto, 
+    \begin{displaymath}
+        \frac{1}{2} < 1 - \frac{1}{-y + 2} < 1,
+    \end{displaymath}
+    Logo, existe um número $1 - \frac{1}{-y + 2} \in ]0; 1[$ tal que
+    \begin{align*}
+        f(1 - \frac{1}{-y + 2}) & = 2 - \frac{1}{1 - (1 - \frac{1}{-y + 2})} \\ & =
+        2 - \frac{1}{\frac{1}{-y + 2}} \\ & =
+        2 - (-y + 2) \\ & =
+        y
+    \end{align*} 
+    Temos que a função é sobrejetiva para $x > \frac{1}{2}$.
+\end{itemize}
+Assim, com a sobrejetividade provada para ambos os casos, temos que $f$ é sobrejetiva.
