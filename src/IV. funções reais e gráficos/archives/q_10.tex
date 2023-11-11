@@ -1,1 +1,38 @@
-Não fiz ainda.
+\enquote{Faça uso de pelo menos um dos resultados anteriores para mostrar a injetividade das funções:}
+\begin{displaymath}
+    f: [1; \infty[ \rightarrow ]-\infty; 0], \text{ tal que } f(x) = -x + 1, 
+\end{displaymath}
+\begin{displaymath}
+    g: [1; \infty[ \rightarrow \R, \text{ tal que } g(x) = x^2 - 2x - 3,
+\end{displaymath}
+\begin{displaymath}
+    h: ]-\infty; 0] \rightarrow \R, \text { tal que } h(x) = x^2 - 4
+\end{displaymath} \\
+\emph{Resolução.}
+\begin{enumerate}
+    \item Função $f$; \\
+    Sejam $x_1, x_2 \in [1; \infty[$ tal que
+    \begin{align*}
+        f(x_1) = f(x_2) & \implies -x_1 + 1 = -x_2 + 1 \\ & \implies
+        x_1 = x_2
+    \end{align*}
+    \item Função $h$; \\
+    Sejam $x_1, x_2 \in ]-\infty; 0]$ tal que
+    \begin{align*}
+        h(x_1) = h(x_2) & \implies x_1^2 - 4 = x_2^2 - 4 \\ & \implies
+        \sqrt{x_1^2} = \sqrt{x_2^2} \\ & \implies
+        |x_1| = |x_2| \\ & \implies
+        x_1 = x_2
+    \end{align*}
+    \item Função $g$; \\
+    Se $f$ e $h$ são injetivas, então $(h \circ f): [1; \infty[ \rightarrow \R$ também é injetiva. Como $g: [1; \infty[ \rightarrow \R$ e para qualquer $x \in [1; \infty[$ temos que
+    \begin{align*}
+        (h \circ f)(x) & = h(f(x)) \\ & =
+        h(-x + 1) \\ & =
+        (-x + 1)^2 - 4 \\ & =
+        x^2 - 2x + 1 - 4 \\ & =
+        x^2 - 2x - 3 \\ & =
+        g(x)         
+    \end{align*}
+    A função $g$ também é, portanto, injetiva pois $(h \circ f) = g$.
+\end{enumerate}
