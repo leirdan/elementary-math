@@ -3,8 +3,8 @@
     \item \enquote{Mostre que $f$ é decrescente.} \\
         \emph{Resolução}. Sejam $a, b \in [3;5]$ tal que $a > b$. Temos, portanto, para todos $a, b$:
         \begin{align*}
-            a > b & \implies
-            a - 2 > b - 2 \\ & \implies
+            3 \le a > b & \implies
+            1 \le a - 2 > b - 2 \\ & \implies
             (a - 2)^2 > (b - 2)^2 \\ & \implies
             a^2 - 4a + 4 > b^2 - 4b + 4 \quad & \cdot(-1)\\ & \implies
             -a^2 + 4a - 4 < -b^2 + 4b - 4 \\ & \implies 
@@ -13,22 +13,23 @@
         \end{align*} 
         Logo, está mostrada que a função é decrescente.
     \item \enquote{$f$ possui máximo absoluto? Se sim, ocorre em qual ponto?} \\
-    \textbf{Aguardando validação.}
-    % \emph{Resolução}. Seja $x_0, x \in [3; 5]$. Para qualquer $x$, temos:
-    % \begin{align*}
-    %     x_0 \ge x & \implies x_0 - 2 \ge x - 2 \\ & \implies
-    %     (x_0 - 2)^2 \ge (x - 2)^2 \\ & \implies
-    % \end{align*}
+    \emph{Resolução.} Seja $x \in [3;5]$. Então, temos
+    \begin{displaymath}
+        3 \le x \le 5
+    \end{displaymath} 
+    Como $f$ é decrescente, temos
+    \begin{align*}
+        f(3) \ge f(x),
+    \end{align*}
+    para todo $x \in [3;5]$. Ou seja, $x_0 = 3$ é o máximo absoluto de $f$.
     \item \enquote{$f$ possui mínimo absoluto? Se sim, ocorre em qual ponto?} \\
-    \textbf{Aguardando validação.}
-    %     \emph{Resolução.} Seja $x_0, x \in [3; 5]$. Para qualquer $x$, temos:
-    %     \begin{align*}
-    %         x_0 \le x & \implies x_0 - 2 \le x - 2 \\ & \implies
-    %         (x_0 - 2)^2 \le (x - 2)^2 \\ & \implies 
-    %         x_0^2 - 4x_0 + 4 \le x^2 - 4x + 4 \\ & \implies
-    %         -x_0^2 + 4x_0 - 4 \ge -x^2 + 4x - 4 \\ & \implies
-    %         -x_0^2 + 4x_0 - 3 \ge -x^2 + 4x - 3 \\ & \implies
-    %         f(x_0) \ge f(x)
-    %     \end{align*}
-    % Logo, a função $f$ não tem mínimo absoluto.
+    \emph{Resolução.} Seja $x \in [3;5]$. Então temos
+    \begin{displaymath}
+        3 \le x \le 5
+    \end{displaymath} 
+    Como $f$ é decrescente, temos
+    \begin{align*}
+        f(5) \le f(x),
+    \end{align*}
+    para todo $x \in [3;5]$. Ou seja, $x_0 = 5$ é o mínimo absoluto de $f$.
 \end{enumerate}
