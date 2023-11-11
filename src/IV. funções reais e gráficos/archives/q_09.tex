@@ -14,51 +14,8 @@
     \end{align*}
     Portanto, ($g \circ f$) é de fato injetiva e a afirmação é verdadeira.
     \item \enquote{Se $(g \circ f)$ é injetiva, então $f$ e $g$ são injetivas.} 
-    \\ \emph{Resolução.} Sejam as funções
-    \begin{align*}
-        f&: \mathbb{N}^* \rightarrow \mathbb{N}\\
-        x &\rightarrow \left\{\begin{array}{c}
-            x, \text{ se $x$ é ímpar}\\
-            \frac{x}{2}, \text{ se $x$ é par}
-        \end{array}\right.,
-    \end{align*}
-    \begin{align*}
-        g: \mathbb{N} &\rightarrow \mathbb{N} \\
-        y &\rightarrow 2y,
-    \end{align*}
-    \begin{align*}
-        g \circ f: \mathbb{N}^* &\rightarrow \mathbb{N} \\
-        x \rightarrow y& \rightarrow 2y
-    \end{align*}
-    Note, portanto, os seguintes casos:
-    \begin{itemize}
-        \item Se $x_1, x_2$ são ímpares:
-        \begin{align*}
-            g(f(x_1)) = g(f(x_2)) & \implies
-            g(x_1) = g(x_2) \\ & \implies
-            2x_1 = 2x_2 \\ & \implies
-            x_1 = x_2
-        \end{align*}    
-        \item Se $x_1, x_2$ são pares:
-        \begin{align*}
-            g(f(x_1)) = g(f(x_1)) & \implies
-            g(\frac{x_1}{2}) = g(\frac{x_2}{2}) \\ & \implies 
-            x_1 = x_2
-        \end{align*}
-        \item Se um elemento é ímpar e outro é par: \\
-        \textbf{Aguardando validação.}
-        % Note que $x_1$, ímpar, é diferente de $x_2$, par. Temos:
-        % \begin{align*}
-        %     (g \circ f)(x_1) = (g \circ f)(x_2) & \implies g(f(x_1)) = g(f(x_2)) \\ & \implies
-        %     g(x_1) = g(\frac{x_2}{2}) \\ & \implies
-        %     2x_1 = x_2 
-        % \end{align*}
-        % Chegamos em um absurdo. Logo, se $x_1$ e $x_2$, então geram imagens diferentes.
-    \end{itemize}
-    Está provada, portanto, que a função composta $(g \circ f)$ é injetiva. Contudo, note que a função $f$ não é, pois
-    \begin{displaymath}
-        f(1) = 1 = f(2)
-    \end{displaymath}
+    \\ \emph{Resolução.} Sejam as funções $f: \{x_1\} \rightarrow \{y_1, y_2\}, g: \{y_1, y_2\} \rightarrow \{z_1\}, (g \circ f): \{x_1\} \rightarrow \{z_1\}$ tal que $f(x_1) = y_1, g(y_1) = z_1, g(y_2) = z_1$.
+    Note que $(g \circ f)$ é injetiva pois $(g \circ f)(x_1) = (z_1)$, mas $g$ não é pois $g(y_1) = z_1 = g(y_2)$.
     Logo, a afirmação é falsa.
     \item \enquote{Se $f$ e $g$ são sobrejetivas, então $(g\circ f)$ é sobrejetiva.}
     \\ \emph{Resolução}. Temos que ($g \circ f$) é definida tal que
