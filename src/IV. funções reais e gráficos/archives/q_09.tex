@@ -5,12 +5,12 @@
     \begin{displaymath}
         g \circ f: X \rightarrow Z 
     \end{displaymath}
-    Se $f$ é injetiva e $g$ também, tomando $a, b \in X \text{ e } x, y \in Y$ temos:
+    Se $f$ é injetiva e $g$ também, tomando $a, b \in X$ temos:
     \begin{align*}
         (g \circ f)(a) = (g \circ f)(b) & \implies
         g(f(a)) = g(f(b)) \\ & \implies
-        g(x) = g(y) \\ & \implies
-        x = y
+        f(a) = f(b) \quad &\text{($g$ é injetiva)} \\ & \implies
+        a = b \quad &\text{($f$ é injetiva)}
     \end{align*}
     Portanto, ($g \circ f$) é de fato injetiva e a afirmação é verdadeira.
     \item \enquote{Se $(g \circ f)$ é injetiva, então $f$ e $g$ são injetivas.} 
@@ -22,28 +22,13 @@
     \begin{displaymath}
         g \circ f: X \rightarrow Z 
     \end{displaymath}
-    Desse modo, se $f$ e $g$ são sobrejetivas, e tomando $x \in X, y \in Y$ e $z \in Z$, temos
+    Desse modo se $f$ e $g$ são sobrejetivas, onde $f(x) = y$ e $g(y) = z$, 
+    tomemos um $z \in Z$. Logo, existem $x \in X, y \in Y$ tal que
     \begin{displaymath}
         (g\circ f)(x) = g(f(x)) = g(y) = z
     \end{displaymath}
-    Logo, $(g \circ f)$ é sobrejetiva e a afirmação é verdadeira.
+    Como é válido para todo $z \in Z$, $(g \circ f)$ é sobrejetiva e a afirmação é verdadeira.
     \item \enquote{Se $(g \circ f)$ é sobrejetiva, então $f \text{ e } g$ são sobrejetivas.}
-    \\ \emph{Resolução.} Sejam as funções
-    \begin{align*}
-        f: \mathbb{R} &\rightarrow \mathbb{R}^*_+ \\
-        x &\rightarrow x^2
-    \end{align*}
-    \begin{align*}
-        g: \mathbb{R}^*_+ &\rightarrow \mathbb{R}_+ \\
-        y &\rightarrow \sqrt{y},
-    \end{align*}
-    \begin{align*}
-        g \circ f: \mathbb{R} &\rightarrow \mathbb{R}_+ \\
-        x \rightarrow &\sqrt{x^2} \rightarrow y
-    \end{align*}
-    Tomando $y \in \mathbb{R}_+$, temos que existe $x \in \mathbb{R}$ tal que 
-    \begin{displaymath}
-        g(f(x)) = g(x^2) = y 
-    \end{displaymath}
-    Logo, a função $(g \circ f)$ é sobrejetiva. Note, contudo, que $g$ não é sobrejetiva pois, tomando $0 \in \mathbb{R}_+$, não há nenhum elemento de $\mathbb{R}^*_+$ que resulte nele.
+    \\ \emph{Resolução.} Sejam $X = \{ x_1 \}, Y = \{ y_1, y_2 \}, Z = \{ z_1 \}$ tal que $f(x_1) = y_1, g(y_1) = z_1, g(y_2) = z_1$. \\
+    Note que $(g \circ f)$ é sobrejetiva, pois $g(f(x_1)) = z_1$, mas $f$ não é sobrejetiva pois não há elemento de $X$ tal que $f(x) = y_2$. Logo, $Y \ne f(X)$ e $f$ não é sobrejetiva.
 \end{enumerate}
