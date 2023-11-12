@@ -14,7 +14,7 @@
     \item \enquote{Mostre que $f$ é decrescente no intervalo $[1; \infty[$;} \\
     \emph{Resolução.} Sejam $a, b \in [1; \infty[$ tal que $a < b$. Temos:
     \begin{align*}
-        a < b \ge 1 & \implies a - 1 < b - 1 \ge 0 \\ & \implies
+        1 \le b < a & \implies 0 \le b - 1 < a - 1 \\ & \implies
         (a - 1)^2 < (b - 1)^2 \\ & \implies
         a^2 - 2a + 1 < b^2 - 2b + 1 \\ & \implies
         -a^2 + 2a - 1 > b^2 + 2b - 1 \\ & \implies
@@ -22,5 +22,13 @@
     \end{align*}
     Logo, está mostrada que a função é decrescente no intervalo citado.
     \item \enquote{Use os itens anteriores para concluir que $1 \in \R$ é um ponto de máximo absoluto de $f$.} \\
-    \emph{Resolução.} Temos que 1 é o ponto máximo absoluto de $f$ visto que ele é o maior valor do trecho crescente de $f$ e, simultaneamente, o maior valor do trecho decrescente de $f$.
+    \emph{Resolução.} Seja $x_1 \in ]-\infty; 1]$, ou seja, $x_1 \le 1$. Como a função é crescente, temos que
+    \begin{displaymath}
+        f(x_1) \le f(1)
+    \end{displaymath}
+    Por outro lado seja $x_2 \in [1; \infty[$, ou seja, $x_2 \ge 1$. Como a função é decrescente, temos que
+    \begin{displaymath}
+        f(1) \ge f(x_2)
+    \end{displaymath}
+    Logo, está mostrado que 1 é o ponto de máximo absoluto de $f$.
 \end{enumerate}
