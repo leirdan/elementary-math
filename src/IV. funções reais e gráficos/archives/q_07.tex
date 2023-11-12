@@ -3,7 +3,13 @@
     f: [3,5; +\infty[ \rightarrow  [-2,25; + \infty[
 \end{displaymath}
 tal que $f(x) = x^2 - 7x + 10$. Prove que $f$ é bijetiva.}
-\\ \emph{Resolução}. Provemos primeiro sua sobrejetividade. Seja $y \in [-2,25; + \infty[$; logo, se a função é sobrejetiva, existe um número $\sqrt{y + \frac{9}{4}} + \frac{7}{2}$ tal que
+\\ \emph{Resolução}. Provemos primeiro sua sobrejetividade. Seja $y \in [-2,25; + \infty[$. Note que: 
+\begin{align*}
+    y \ge -\frac{9}{4} & \implies y + \frac{9}{4} \ge 0 \\ & \implies
+    \sqrt{y + \frac{9}{4}} \ge 0 \\ & \implies
+    \sqrt{y + \frac{9}{4}} + \frac{7}{2} \ge \frac{7}{2}
+\end{align*}
+Logo, existe um número $\sqrt{y + \frac{9}{4}} + \frac{7}{2}$ tal que
 \begin{align*}
     f(\sqrt{y + \frac{9}{4}} + \frac{7}{2}) & = (\sqrt{y + \frac{9}{4}} + \frac{7}{2})^2 - 7 \cdot (\sqrt{y + \frac{9}{4}} + \frac{7}{2}) + 10 \\ & =
     y + \frac{9}{4} + 2\cdot\frac{7}{2}\cdot \sqrt{y + \frac{9}{4}} + \frac{49}{4} -7\sqrt{y + \frac{9}{4}} - \frac{49}{2} + 10 \\ & =
@@ -19,7 +25,9 @@ Por fim, provemos sua injetividade. Tomando $a, b \in [3,5; +\infty[$, temos que
     a^2 - 7a = b^2 - 7b \\ & \implies
     a^2 - 7a + (\frac{7}{2})^2 = b^2 - 7a + (\frac{7}{2})^2 \\ & \implies
     (a - \frac{7}{2})^2 = (b - \frac{7}{2})^2 \\ & \implies
-    a - \frac{7}{2} = b - \frac{7}{2} \\ & \implies
+    \sqrt{(a - \frac{7}{2})^2} = \sqrt{(b - \frac{7}{2})^2} \\ & \implies
+    |a - \frac{7}{2}| = |b - \frac{7}{2}| \\ & \implies
+    a - \frac{7}{2} = b - \frac{7}{2} \quad (a \ge \frac{7}{2}, b \ge \frac{7}{2}) \\ & \implies
     a = b
 \end{align*}
 Assim está provada a injetividade e, consequentemente, a bijetividade da função.
