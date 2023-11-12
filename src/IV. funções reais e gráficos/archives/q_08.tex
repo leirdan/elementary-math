@@ -1,1 +1,28 @@
-Não fiz ainda.
+\enquote{Considere as funções:}
+\begin{displaymath}
+    f: ]-\infty; 0] \rightarrow [-4; \infty[, \text{ tal que } f(x) = -x - 4, 
+\end{displaymath}
+\begin{displaymath}
+    g: ]-\infty; 0] \rightarrow \R, \text{ tal que } g(x) = \sqrt{-x}
+\end{displaymath}
+\begin{displaymath}
+    h: \R \rightarrow [-4; \infty[, \text{ tal que } h(x) = x^2 - 4
+\end{displaymath}
+\enquote{Quais dessas funções é sobrejetiva e quais não são? Alguma dessas funções é resultante da composição das outras?} \\
+\emph{Resolução.} Note que $f$ é sobrejetiva pois, tomando $y \in [-4; \infty[$, temos
+\begin{align*}
+    y \ge -4 \implies -y \le 4 \implies -4 -y \le 0 
+\end{align*}
+Logo, há um número $-4 - y \in ]-\infty; 0]$ tal que 
+\begin{align*}
+    f(-4 - y) = -(-4 - y) - 4 = y 
+\end{align*}
+Além disso, $f$ é a composta de $(h \circ g)$, pois tomado $x \in \R_-$ temos
+\begin{align*}
+    h(g(x))  = h(\sqrt{-x}) = (\sqrt{-x})^2 - 4 = -x - 4 = f(x)    
+\end{align*}
+$h$ também é sobrejetiva pois, tomando $y \in [-4; \infty[$, temos que há um número $\sqrt{y + 4} \in \R$ tal que
+\begin{align*}
+    h(\sqrt{y + 4}) = (\sqrt{y + 4})^2 - 4 = y
+\end{align*}
+Contudo, $g$ não é sobrejetiva pois $g(x) \ge 0$ para todos os $x \in \R_-$; logo, não existe $g(x) = -1$.
