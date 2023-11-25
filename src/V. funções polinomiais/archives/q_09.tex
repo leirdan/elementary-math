@@ -1,0 +1,54 @@
+\enquote{Considere $f: [-5; 1] \rightarrow \R$ tal que $f(x) = -x^2 -2x + 8$.}
+\begin{enumerate}
+    \item \enquote{Faça um esboço do gráfico da função $f$ e aponte os extremos absolutos da função;} \\
+    \emph{Resolução.} Vamos calcular alguns dados. A princípio, vejamos suas raízes:
+    \begin{align*}
+        x = \frac{2 \pm \sqrt{36}}{-2} = \frac{2 \pm 6}{-2}
+    \end{align*} 
+    Então, $x_1 = \frac{8}{-2} = -4$ e $x_2 = \frac{-4}{-2} = 2$.
+    Calculemos então o vértice da parábola, tomando $x \in [-5; 1], y \in \R$ tais que
+    \begin{align*}
+        x = -\frac{-2}{-2} = -1
+    \end{align*}
+    e 
+    \begin{align*}
+        y = -1 + 2 + 8 = 9
+    \end{align*}
+    Logo, o vértice da parábola é o ponto (-1, 9) e o valor máximo de $f$ é -1. \\
+    Conhecendo o valor máximo de $f$, podemos montar os intervalos $[-5; -1]$ e $[-1; 1]$ onde o primeiro é crescente e o segundo decrescente, visto que $a < 0$ e o gráfico de uma função quadrática tem formato de parábola, ou seja, tem um intervalo crescente e outro decrescente.
+    Vejamos o ponto mínimo no primeiro intervalo, tomando qualquer $x \in [-5; -1]$:
+    \begin{align*}
+        -5 \le x \le -1 \implies f(-5) \le f(x) \le f(-1)
+    \end{align*}
+    Logo, -5 é o valor mínimo neste intervalo. Tomando qualquer $x \in [-1; 1]$, temos também:
+    \begin{align*}
+        -1 \le x \le 1 \implies f(-1) \ge f(x) \ge f(1)
+    \end{align*}
+    Logo, sabendo que $f$ é decrescente neste intervalo, temos que o valor mínimo dele é 1. Para concluir o mínimo absoluto de $f$, basta comparar:
+    \begin{align*}
+        f(-5) &= -25 + 10 + 8 = -7 \\
+        f(1) &= -1 - 2 + 8 = 5
+    \end{align*}
+    Como $f(-5) < f(1)$, -5 é, de fato, o mínimo absoluto de $f$.
+    Por fim, sabemos que o ponto (0, 8) \enquote{encosta} no eixo $y$, pois $f(0) = 0 + 0 + 8 = 8$. \\
+    Com todos esses dados, teremos o seguinte gráfico:
+    \begin{tikzpicture}
+        \begin{axis}[axis lines = center, xlabel=x, ylabel=f(x),
+        xtick={-5, -4, -1, 0, 1}, ytick={-7, 0, 9, 8, 5}]
+            \addplot[domain=-5:1, color=red]{-x^2 -2*x +8};
+        \end{axis}
+    \end{tikzpicture}
+    \item \enquote{Defina uma função bijetiva $f'$ onde $f'(x) = f(x)$ para todo $x$ pertencente ao intervalo que será o domínio de $f'$ e que preserve os extremos de $f$;} \\
+    \emph{Resolução.} Podemos definir uma função $f': [-5; -1] \rightarrow [-7; 9]$, tornando a função tanto injetiva quanto sobrejetiva e preservando os pontos mínimo e máximo absolutos.
+    \item \enquote{Prove que $f'$ é monótona.} \\
+    \emph{Resolução.} Sejam $a, b \in [-5; -1]$ onde $a < b$ tais que
+    \begin{align*}
+        a < b \le -1 & \implies a + 1 < b + 1 \le 0 \\ & \implies
+        (a + 1)^2 > (b + 1)^2 \\ & \implies
+        a^2 + 2a +2 > b^2 + 2b + 2 \\ & \implies
+        -a^2 - 2a - 2 < -b^2 - 2b - 2 \\ & \implies 
+        -a^2 - 2a + 8 < -b^2 - 2b + 8 \\ & \implies
+        f(a) < f(b) 
+    \end{align*}
+    Então, está mostrado que a função $f'$ é monótona crescente.
+\end{enumerate}
