@@ -1,0 +1,35 @@
+\enquote{Sejam $f: \R \rightarrow \R$ e $g: \R \rightarrow \R$. Determine se as afirmações abaixo são verdadeiras ou falsas, justificando suas respostas.}
+\begin{enumerate}
+    \item Se $f$ e $g$ são crescentes, então a composta $(f \circ g)$ é uma função crescente. \\
+    \emph{Resolução.} Afirmação verdadeira. Por definição, $f$ é crescente se, tomados $x_1, x_2 \in \R$, ocorre
+    \begin{align*}
+        x_1 < x_2 \implies f(x_1) < f(x_2)
+    \end{align*}
+    Analogamente, tomados $y_1, y_2 \in \R$, temos que $g$ é crescente se
+    \begin{align*}
+        y_1 < y_2 \implies g(y_1) < g(y_2)
+    \end{align*}
+    Portanto, $(f \circ g)$ é crescente pois:
+    \begin{align*}
+        y_1 < y_2 & \implies g(y_1) < g(y_2) \\ & \implies
+        f(g(y_1)) < f(g(y_2))
+    \end{align*}
+    \item Se $f$ e $g$ são crescentes, então o produto $f \cdot g$ é uma função crescente. \\
+    \emph{Resolução.} Afirmação falsa. Sejam $f(x) = x$ e $g(x) = x - 1$. $f$ é crescente pois, tomados $x_1, x_2 \in \R$ onde $x_1 < x_2$, temos
+    \begin{displaymath}
+        x_1 < x_2 \implies f(x_1) < f(x_2)
+    \end{displaymath}
+    $g$ é crescente pois, tomados $x_1, x_2 \in \R$ onde $x_1 < x_2$, temos
+    \begin{displaymath}
+        x_1 < x_2 \implies x_1 - 1 < x_2 - 1 \implies f(x_1) < f(x_2) 
+    \end{displaymath}
+    Note que $(f \cdot g)$ não é uma função crescente pois, sendo $f(-5) = -5$ e $g(-5) = -6$, temos
+    \begin{displaymath}
+        f(-5) \cdot g(-5) = 30,
+    \end{displaymath}
+    enquanto $f(-4) = -4$ e $g(-4) = -5$ temos
+    \begin{displaymath}
+        f(-4) \cdot g(-4) = 20 
+    \end{displaymath}
+    Ou seja, para $x_1 = -5$ e $x_2 = -4$, onde $x_1 < x_2$, temos $f(x_1) \cdot g(x_1) > f(x_2) \cdot g(x_2)$, o que implica que a função $(f \cdot g)$ não é crescente.
+\end{enumerate}
