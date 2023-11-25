@@ -1,0 +1,18 @@
+\enquote{Mostre que uma função afim $f: \R \rightarrow \R$ fica inteiramente determinada quando conhecemos $f(x_1)$ e $f(x_2)$ para $x_1 \ne x_2$. Em outras palavras, calcule $a, b \in \R$ onde $f(x) = ax + b$.} \\
+\emph{Resolução.} Sejam $a, b, x_1, x_2 \in \R$. Temos o seguinte sistema:
+\begin{align*}
+    f(x_1) &= ax_1 + b \\
+    f(x_2) &= ax_2 + b 
+\end{align*} 
+Fazendo uma "subtração", temos:
+\begin{align*}
+    f(x_1) - f(x_2) = ax_1 - ax_2 & \implies
+    x_1 - x_2 = \frac{f(x_1) - f(x_2)}{a} \\ & \implies
+    a = \frac{x_1 - x_2}{f(x_1) - f(x_2)}
+\end{align*}
+Sabendo $a$, retornemos à primeira equação:
+\begin{align*}
+    f(x_1) = ax_1 + b & \implies f(x_1) = \frac{x_1 - x_2}{f(x_1) - f(x_2)} \cdot x_1 + b \\ & \implies 
+    b = f(x_1) - \frac{x_1 - x_2}{f(x_1) - f(x_2)} x_1
+\end{align*}
+Logo, quando $a = \dfrac{x_1 - x_2}{f(x_1) - f(x_2)}$ e $b = f(x_1) - \dfrac{x_1 - x_2}{f(x_1) - f(x_2)} x_1$, a função fica inteiramente determinada.

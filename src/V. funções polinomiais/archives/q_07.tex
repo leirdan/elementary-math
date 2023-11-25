@@ -1,0 +1,53 @@
+\enquote{Encontre os valores mínimo e máximo assumidos pela função $f(x) = x^2 - 4x + 3$ em cada um dos intervalos abaixo:}
+\begin{enumerate}
+    \item $[1; 4]$; \\
+    \emph{Resolução.} Como $a > 0$, podemos encontrar o valor mínimo da função a partir do vértice da parábola. Então, sejam $x \in \R$ tal que
+    \begin{align*}
+        x = -\frac{b}{2a} = -\frac{-4}{2} = 2
+    \end{align*}
+    e $y \in \R$ tal que 
+    \begin{align*}
+        y = f(2) = 4 - 8 + 3 = -1
+    \end{align*}
+    Portanto, o ponto (2, -1) é o ponto mínimo da função e -1 é o valor mínimo dela. \\
+    Mostremos agora que $f$ é decrescente no intervalo [1; 2] e crescente no intervalo [2; 4]. Tomando $a, b \in [1; 2]$, onde $a < b$, temos:
+    \begin{align*}
+        1 \le a < b \le 2 & \implies -1 \le a - 2 < b - 2 \le 0 \\ & \implies
+        (a - 2)^2 > (b - 2)^2 \\ & \implies
+        a^2 - 4a + 4 > b^2 - 4b + 4 \\ & \implies
+        a^2 - 4a + 3 > b^2 - 4b + 3 \\ & \implies
+        f(a) > f(b)
+    \end{align*}
+    Portanto, mostrado que o intervalo é, de fato, decrescente, tome um $x \in [1; 2]$ qualquer, ou seja
+    \begin{align*}
+        1 \le x \le 2
+    \end{align*}
+    Como o intervalo é decrescente, temos
+    \begin{align*}
+        1 \le x \implies f(1) \ge f(x)
+    \end{align*}
+    Logo, 1 é o ponto máximo deste intervalo. Agora, tome $p, q \in [2;4]$, onde $p < q$, tal que:
+    \begin{align*}
+        2 \le p < q & \implies 0 \le p - 2 < q - 2 \\ & \implies
+        (p - 2)^2 < (q - 2)^2 \\ & \implies
+        p^2 - 4p + 4 < q^2 - 4q + 4 \\ & \implies
+        p^2 - 4p + 3 < q^2 - 4q + 3 \\ & \implies 
+        f(p) < f(q)
+    \end{align*}
+    Sabendo que $f$ é crescente no intervalo, tome qualquer $x \in [2; 4]$, ou seja
+    \begin{align*}
+        2 \le x \le 4
+    \end{align*}
+    Portanto, temos que
+    \begin{align*}
+        x \le 4 \implies f(x) \le f(4)
+    \end{align*}
+    Logo, 4 é o ponto máximo do intervalo crescente. Com dois elementos candidatos ao posto de ponto máximo, basta comparar suas imagens:
+    \begin{align*}
+        f(1) &= 1 - 4 + 3 = 0 \\
+        f(4) &= 16 - 16 + 3 = 3
+    \end{align*}
+    Logo, $f(4) > f(1)$ e (4, 3) é o ponto máximo da função e 3 o valor máximo.
+    \item $[6; 10]$. \\
+    \emph{Não fiz ainda.}
+\end{enumerate}

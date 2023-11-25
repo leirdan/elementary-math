@@ -1,0 +1,28 @@
+\enquote{Considere a função $f: \R \rightarrow \R$ tal que $f(x) = x^2 -7x + 12$.}
+\begin{enumerate}
+    \item \enquote{Calcule as raízes de $f$ e qual $x_0 \in \R$ é o mínimo absoluto de $f$;} \\
+    \emph{Resolução.} Para calcular as raízes temos:
+    \begin{align*}
+        x = \frac{7 \pm \sqrt{49 - 48}}{2} = \frac{7 \pm 1}{2}
+    \end{align*}
+    Logo, temos como raízes $x_1 = \frac{8}{2} = 4$ e $x_2 = \frac{6}{2} = 3$. \\
+    Além disso, para calcular o mínimo absoluto de $f$ (já que $a > 0$), tomemos $x_0 \in \R$ tal que
+    \begin{align*}
+        x_0 = -\frac{b}{2a} = \frac{7}{2}
+    \end{align*}
+    e $y_0 \in \R$ tal que
+    \begin{align*}
+        y_0 = -\frac{\Delta}{4a} = -\frac{1}{4}
+    \end{align*}
+    Logo, o ponto $(\frac{7}{2}, -\frac{1}{4})$ é o ponto mínimo de $f$ e $x_0 = \frac{7}{2}$ é o mínimo absoluto de $f$.
+    \item \enquote{Mostre que $f$ é monótona no intervalo $]-\infty, x_0] = \{x; x \le x_0\}$}. \\
+    \emph{Resolução.} Mostremos que $f$ é monótona decrescente no intervalo $]-\infty; \frac{7}{2}$. Sejam $a, b \in ]-\infty; \frac{7}{2}]$ onde $a < b$ tal que
+    \begin{align*}
+        a < b \le \frac{7}{2} & \implies a - \frac{7}{2} < b - \frac{7}{2} \le 0 \\ & \implies
+        (a - \frac{7}{2})^2 > (b - \frac{7}{2})^2 \ge 0 \\ & \implies
+        a^2 - 7a + \frac{49}{4} > b^2 - 7b + \frac{49}{4} \\ & \implies
+        a^2 - 7a + 12 > b^2 - 7b + 12 \\ & \implies
+        f(a) > f(b)
+    \end{align*}
+    Logo, está mostrada que a função $f$ é decrescente no intervalo $]-\infty; \frac{7}{2}]$.
+\end{enumerate}

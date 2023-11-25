@@ -1,0 +1,31 @@
+\enquote{Pessoas apressadas podem diminuir o tempo gasto em uma
+escada rolante subindo alguns degraus da escada no percurso.
+Para uma certa escada, observa-se que uma pessoa gasta 30
+seg na escada quando sobre 5 degraus e 20 seg quando sobe
+10 degraus. Quantos são os degraus da escada e qual o tempo
+gasto no percurso?} \\
+\emph{Resolução.} Seja a função $f(d) = ad + b$ a função que calcula o tempo gasto na escada rolante em função da quantidade de passos dados.
+A princípio temos:
+\begin{align*}
+    f(5) &= 30 = a \cdot 5 + b \\
+    f(10) &= 20 = a \cdot 10 + b
+\end{align*}
+Podemos "subtrair" as equações:
+\begin{align*}
+    30 - 20 = 5a - 10a & \implies 10 = -5a \\ & \implies
+    a = -2
+\end{align*}
+Calculado $a$, vamos substituir para encontrar $b$:
+\begin{align*}
+    30 = -2 \cdot 5 + b & \implies b = 40
+\end{align*}
+Portanto, temos a função $f$ modelada como $f(d) = 40 - 2d$. \\
+Podemos calcular o tempo total gasto quando não há degraus andados, ou seja, $d = 0$:
+\begin{align*}
+    f(0) = 40 - 0 = 40
+\end{align*}
+Logo, o tempo total é de 40 segundos. Em seguida, para calcular a quantidade de degraus, podemos supôr $f(d) = 0$ de modo que:
+\begin{align*}
+    40 - 2d = 0 \implies -2d = -40 \implies d = 20
+\end{align*}
+Logo, a quantidade de degraus da escada é 20.
