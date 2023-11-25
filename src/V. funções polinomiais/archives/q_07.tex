@@ -9,7 +9,7 @@
     \begin{align*}
         y = f(2) = 4 - 8 + 3 = -1
     \end{align*}
-    Portanto, o ponto (2, -1) é o ponto mínimo da função e -1 é o valor mínimo dela. \\
+    Portanto, o ponto (2, -1) é o ponto mínimo da função e $x = 2$ é o valor mínimo dela. \\
     Mostremos agora que $f$ é decrescente no intervalo [1; 2] e crescente no intervalo [2; 4]. Tomando $a, b \in [1; 2]$, onde $a < b$, temos:
     \begin{align*}
         1 \le a < b \le 2 & \implies -1 \le a - 2 < b - 2 \le 0 \\ & \implies
@@ -47,7 +47,19 @@
         f(1) &= 1 - 4 + 3 = 0 \\
         f(4) &= 16 - 16 + 3 = 3
     \end{align*}
-    Logo, $f(4) > f(1)$ e (4, 3) é o ponto máximo da função e 3 o valor máximo.
+    Logo, $f(4) > f(1)$, (4, 3) é o ponto máximo da função e $x = 4$, o valor máximo.
     \item $[6; 10]$. \\
-    \emph{Não fiz ainda.}
+    \emph{Resolução.} Vamos mostrar que $f$ é monótona crescente no intervalo $[6; 10]$. Portanto tome $a, b \in [6; 10]$, onde $a < b$, tais que
+    \begin{align*}
+        6 \le a < b \le 10 & \implies 4 \le a - 2 < b - 2 \le 8 \\ & \implies
+        (a - 2)^2 < (b - 2)^2 \\ & \implies
+        a^2 - 4a + 4 < b^2 - 4a + 4 \\ & \implies
+        a^2 - 4a + 3 < b^2 - 4a + 3 \\ & \implies
+        f(a) < f(b)
+    \end{align*} 
+    Logo, sabendo que a função $f$ é crescente neste intervalo, tome qualquer $x \in [6; 10]$, ou seja,
+    \begin{align*}
+        6 \le x \le 10 & \implies f(6) \le f(x) \le f(10)
+    \end{align*}
+    Assim, sabemos que 6 é valor mínimo de $f$ e 10 seu valor máximo, ao menos no intervalo.
 \end{enumerate}
