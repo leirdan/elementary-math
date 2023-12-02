@@ -8,11 +8,11 @@ Fazendo uma "subtração", temos:
 \begin{align*}
     f(x_1) - f(x_2) = ax_1 - ax_2 & \implies
     x_1 - x_2 = \frac{f(x_1) - f(x_2)}{a} \\ & \implies
-    a = \frac{x_1 - x_2}{f(x_1) - f(x_2)}
+    a = \frac{f(x_1) - f(x_2)}{x_1 - x_2}
 \end{align*}
 Sabendo $a$, retornemos à primeira equação:
 \begin{align*}
-    f(x_1) = ax_1 + b & \implies f(x_1) = \frac{x_1 - x_2}{f(x_1) - f(x_2)} \cdot x_1 + b \\ & \implies 
-    b = f(x_1) - \frac{x_1 - x_2}{f(x_1) - f(x_2)} x_1
+    f(x_1) = ax_1 + b & \implies f(x_1) = \frac{f(x_1) - f(x_2)}{x_1 - x_2} \cdot x_1 + b \\ & \implies 
+    b = f(x_1) - \frac{f(x_1) - f(x_2)}{x_1 - x_2} x_1
 \end{align*}
-Logo, quando $a = \dfrac{x_1 - x_2}{f(x_1) - f(x_2)}$ e $b = f(x_1) - \dfrac{x_1 - x_2}{f(x_1) - f(x_2)} x_1$, a função fica inteiramente determinada.
+Logo, quando $a = \dfrac{f(x_1) - f(x_2)}{x_1 - x_2}$ e $b = f(x_1) - \dfrac{f(x_1) - f(x_2)}{x_1 - x_2} x_1$, a função fica inteiramente determinada.
