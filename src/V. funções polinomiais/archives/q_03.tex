@@ -1,1 +1,20 @@
-Não fiz ainda.
+\enquote{Uma aplicação financeira rende a juros simples quando os juros são calculados somente sobre a aplicação inicial durante todo o período de tempo. \\
+Edson faz uma aplicação que rende juros $j > 0$ em um mês. Ou seja, se ele investiu um capital inicial $c_0$, então ao fim de 1 mês, Edson poderia resgatar $c = c_0(1 + j)$. Caso a aplicação renda juros simples, defina uma função afim que calcule o capital $c_s$ em função do tempo $t$ (em meses) da aplicação.} \\
+\emph{Resolução.} Seja $f: \R \rightarrow \R$ tal que $f(t) = at + b$ é a função que calcula os juros simples. Sabemos que $f(0) = c_0$, onde $c_0 \in \R$ é o capital inicial. Sabemos, também, que $f(1) = c_0(1 + j)$, onde $j \in \R$ são os juros. \\
+Então, apliquemos $f(0)$:
+\begin{align*}
+    f(0) = a \cdot 0 + b = b
+\end{align*}
+Logo, $b$ é o capital inicial $c_0$.
+Além disso, apliquemos $f(0)$:
+\begin{align*}
+    f(1) = c_0(1 + j) = a \cdot 1 + b & \implies b(1 + j) = a + b \\ & \implies
+    a = b - b(1 + j) \\ & \implies
+    a = b - b + b \cdot j \\ &\implies
+    a = b \cdot j
+\end{align*} 
+Logo, reescrevendo $f$:
+\begin{align*}
+    f(t) = c_0 \cdot j \cdot t + c_0 = c_0(t \cdot j + 1)
+\end{align*}
+Assim, essa é a função que calcula o capital em função dos meses.
