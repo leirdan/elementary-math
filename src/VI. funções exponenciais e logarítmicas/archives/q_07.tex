@@ -1,0 +1,28 @@
+\enquote{Uma interpretação do logaritmo decimal é sua relação com a ordem de grandeza, isto é, com o número de algarismos na representação decimal. As questões a seguir exploram essa relação.}
+\begin{enumerate}
+    \item \enquote{Considere o número $x = 58.932,1503$. Qual é a parte inteira de $\log x$?} \\
+    \emph{Resolução.} A princípio, temos:
+    \begin{align*}
+        \log 10000 & = \log (100 \cdot 100) = 2 + 2 = 4 \\
+        \log 100000 & = \log (10000 \cdot 10) = 4 + 1 = 5, 
+    \end{align*}
+    e que a função logarítmica é crescente quando a base $a > 1$. Note, portanto, que:
+    \begin{align*}
+        10000 < x < 100000 & \implies \log 10000 < \log x < \log 100000 \\ & \implies
+        4 < \log x < 5
+    \end{align*}
+    Então, podemos concluir que a parte inteira de $\log x$ é 4.
+    \item \enquote{Considere $x > 1$ um número real cuja parte inteira tem $k$ algarismos. Use que a função logarítmica é crescente para mostrar que a parte inteira de $\log x$ é igual a $k - 1$.}\\ 
+    \emph{Resolução.} Sejam $x \in \R, k \in \Z$, onde $x > 1$. Temos:
+    \begin{align*}
+        10^k > x \ge 10^{k-1} & \implies \log 10^k > \log x \ge \log 10^{k-1} \quad (\text{$\log_10$ é crescente}) \\ & \implies
+        k > \log x \ge k -1
+    \end{align*}
+    Portanto, se $\log x \ge k - 1$, sua parte inteira é igual a $k - 1$.
+    \item \enquote{Generalizando o item anterior, considere o sistema de numeração posicional de base $b \ge 2$. Mostre que, se a representação de um número real $x > 1$ nesse sistema tem $k$ algarismos, então, a parte inteira de $\log_b x$ é igual a $k - 1$.}
+    \emph{Resolução.} Sejam $x, b \in \R, k \in \Z$, onde $x > 1$ e $b \ge 2$. Temos:
+    \begin{align*}
+        b^k > x \ge b^{k-1} & \implies \log_b b^k > \log_b x \ge \log_b b^{k-1} \\ & \implies k > \log_b x \ge k - 1
+    \end{align*}
+    Portanto, se $\log_b x \ge k - 1$, sua parte inteira é $k - 1$.
+\end{enumerate}
