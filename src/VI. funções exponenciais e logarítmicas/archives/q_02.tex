@@ -1,0 +1,35 @@
+\enquote{Uma aplicação rende a juros compostos se o rendimento diário é somado ao capital inicial para o cálculo dos juros dos dias seguintes. \\
+Edson faz uma aplicação que rende juros $j > 0$ em um mês. Ou seja, se ele investiu um capital inicial $c_0$, então ao fim de 1 mês, Edson poderia resgatar $c = c_0(1 + j)$.}
+\begin{enumerate}
+    \item \enquote{Caso a aplicação renda juros compostos, defina uma função do tipo exponencial que calcule o capital $c_c$ em função do tempo $t$ (em meses) da aplicação;} \\ 
+    \emph{Resolução.} Seja $f(t) = a^t \cdot b$ uma função de tipo exponencial que calcula os juros compostos, onde $t$ é o tempo em meses. Sabemos que $f(0) = b$ e que $f(1) = c_0(1 + j)$. Logo, temos que $b$ é o capital inicial $c_0$. Vamos apicar $f(1)$:
+    \begin{align*}
+        f(1) = c_0(1 + j) = a \cdot c_0 & \implies \frac{c_0(1 + j)}{c_0} \\ & \implies
+        a = 1 + j
+    \end{align*}
+    Desse modo, modelemos a função
+    \begin{align*}
+        f(t) = a^t \cdot b = (1 + j) \cdot c_0
+    \end{align*}
+    \item \enquote{Suponha que Edson precisará resgatar todo o dinheiro da aplicação em um tempo $t$ menor que um mês. É mais vantajoso aplicar com juros simples ou com juros compostos? Compare com a função criada no Exercício sobre juros simples do capítulo anterior e utilize a Desigualdade de Bernoulli.} \\ 
+    \emph{Resolução.} De acordo com a Desigualdade de Bernoulli, temos, para $0 < b < 1$:
+    \begin{displaymath}
+        (1 + a)^b \le 1 + ab
+    \end{displaymath}
+    Sendo as funções $simp(t) = c_0(1 + jt)$ e $comp(t) = c_0(1 + j)^t$ definidas anteriormente temos, analogamente:
+    \begin{align*}
+        (1 + j)^t \le (1 + jt) & \implies c_0(1 + j)^t \le c_0(1 + jt) \quad (c_0 > 0) \\ & \implies comp(t) \le simp(t)
+    \end{align*}
+    Deste resultado temos que é mais vantajoso para Edson aplicar com juros simples.
+    \item \enquote{A conclusão do item anterior também válida caso o tempo de aplicação fosse mais de 1 mês?} \\ 
+    \emph{Resolução.} Não. Note que, para $b > 1$ temos:
+    \begin{displaymath}
+        (1 + a)^b \ge 1 + ab
+    \end{displaymath}
+    Logo, para as mesmas funções acima, teríamos
+    \begin{align*}
+        (1 + j)^t \ge (1 + jt) & \implies c_0(1 + j)^t \ge c_0(1 + jt) \\ & \implies
+        comp(t) \ge simp(t)
+    \end{align*}
+    Para casos onde $t > 1$, portanto, é melhor aplicar em juros compostos.
+\end{enumerate}
