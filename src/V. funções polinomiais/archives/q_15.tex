@@ -1,0 +1,14 @@
+\enquote{Mostre que se $n$ é um número par, então o polinômio $p(x) = x^n + x^{n - 1} + \cdots + x + 1$ não possui raíz real.} \\ 
+\emph{Resolução.} Sejam $a \ne 1$ e $n \in \R$ par. Para esse caso, note que $p(x) = \frac{x^{n+1} - 1}{x - 1}$. Suponha por absurdo que este $a$ é raiz de $p$. Logo, temos:
+\begin{align*}
+    p(a) = \frac{a^{n+1} - 1}{a - 1} = 0 & \iff
+    a^{n+1} - 1 = 0 \quad &\cdot(a - 1) \\ & \iff
+    a^{n+1} = 1 \\ & \implies
+    \sqrt[n+1]{a^{n+1}} = \sqrt[n+1]{1} \\ & \implies
+    a = 1 \quad &(\text{$n+1$ é ímpar})
+\end{align*}
+Contudo, como $a \ne 1$, chegamos em um absurdo. Logo, não existe raiz real para $p$ quando $n$ é par e $a \ne 1$. Note, porém, que tomando $a = 1$:
+\begin{align*}
+    p(1) = 1^2 + 1^1 + 1 + 1 \ne 0
+\end{align*}
+Portanto não há raíz real para $p$.
